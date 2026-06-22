@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>마취과 핵심 퀴즈</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+  }
+  .header {
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 16px;
+  }
+  .title { font-size: 18px; font-weight: 700; color: #1a2332; }
+  .subtitle { font-size: 13px; color: #888; margin-top: 2px; }
+  .progress-bar-wrap {
+    width: 100%;
+    max-width: 520px;
+    background: #dce3ec;
+    border-radius: 99px;
+    height: 6px;
+    margin-bottom: 20px;
+  }
+  .progress-bar {
+    height: 6px;
+    border-radius: 99px;
+    background: #4a90e2;
+    transition: width 0.4s ease;
+  }
+  .card {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 20px 20px;
+    margin-bottom: 12px;
+  }
+  .badge-row { display: flex; gap: 6px; margin-bottom: 14px; }
+  .badge {
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 99px;
+    background: #eef3fb;
+    color: #4a90e2;
+    font-weight: 600;
+  }
+  .badge.lvl { background: #fff3e0; color: #f57c00; }
+  .question {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #1a2332;
+    margin-bottom: 20px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option-btn {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid #e8edf3;
+    border-radius: 10px;
+    background: #fafbfc;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.15s;
+    line-height: 1.4;
+  }
+  .option-btn:hover:not(:disabled) {
+    border-color: #4a90e2;
+    background: #f0f6ff;
+  }
+  .option-btn.correct {
+    border-color: #34c759;
+    background: #f0fff4;
+    color: #1a7a3a;
+    font-weight: 600;
+  }
+  .option-btn.wrong {
+    border-color: #ff3b30;
+    background: #fff5f5;
+    color: #cc2200;
+  }
+  .option-btn:disabled { cursor: default; }
+  .num {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #e8edf3;
+    color: #555;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .option-btn.correct .num { background: #34c759; color: #fff; }
+  .option-btn.wrong .num { background: #ff3b30; color: #fff; }
+  .explanation {
+    display: none;
+    margin-top: 16px;
+    padding: 14px;
+    background: #f0f6ff;
+    border-radius: 10px;
+    border-left: 4px solid #4a90e2;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+  }
+  .explanation.show { display: block; }
+  .next-btn {
+    display: none;
+    width: 100%;
+    max-width: 520px;
+    padding: 15px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .next-btn:hover { background: #357abd; }
+  .next-btn.show { display: block; }
+  .counter {
+    font-size: 13px;
+    color: #888;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .result-card {
+    display: none;
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .result-card.show { display: block; }
+  .result-score { font-size: 52px; font-weight: 800; color: #4a90e2; }
+  .result-label { font-size: 16px; color: #555; margin-top: 8px; }
+  .result-msg { font-size: 22px; font-weight: 700; color: #1a2332; margin-top: 16px; }
+  .restart-btn {
+    margin-top: 24px;
+    padding: 14px 32px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .option-row { display: flex; align-items: flex-start; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title">마취과 핵심 퀴즈</div>
+  <div class="subtitle" id="subtitle">25문제</div>
+</div>
+
+<div class="progress-bar-wrap">
+  <div class="progress-bar" id="progressBar" style="width:0%"></div>
+</div>
+
+<div class="card" id="quizCard">
+  <div class="badge-row">
+    <span class="badge" id="catBadge"></span>
+    <span class="badge lvl" id="lvlBadge"></span>
+  </div>
+  <div class="question" id="questionText"></div>
+  <div class="options" id="optionsContainer"></div>
+  <div class="explanation" id="explanation"></div>
+</div>
+
+<button class="next-btn" id="nextBtn" onclick="nextQuestion()">다음 문제 →</button>
+<div class="counter" id="counter"></div>
+
+<div class="result-card" id="resultCard">
+  <div class="result-score" id="resultScore"></div>
+  <div class="result-label">정답</div>
+  <div class="result-msg" id="resultMsg"></div>
+  <button class="restart-btn" onclick="restart()">다시 풀기</button>
+</div>
+
+<script src="questions.js"></script>
+<script>
+let current = 0;
+let score = 0;
+let answered = false;
+let shuffled = [];
+
+function shuffle(arr) {
+  let a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function start() {
+  shuffled = shuffle(QUESTIONS);
+  current = 0;
+  score = 0;
+  document.getElementById('resultCard').classList.remove('show');
+  document.getElementById('quizCard').style.display = '';
+  document.getElementById('nextBtn').classList.remove('show');
+  document.getElementById('subtitle').textContent = shuffled.length + '문제';
+  loadQuestion();
+}
+
+function loadQuestion() {
+  answered = false;
+  const q = shuffled[current];
+  document.getElementById('catBadge').textContent = q.cat;
+  document.getElementById('lvlBadge').textContent = q.lvl;
+  document.getElementById('questionText').textContent = (current + 1) + '. ' + q.q;
+  document.getElementById('explanation').textContent = q.exp;
+  document.getElementById('explanation').classList.remove('show');
+  document.getElementById('nextBtn').classList.remove('show');
+  document.getElementById('counter').textContent = (current + 1) + ' / ' + shuffled.length;
+
+  const pct = (current / shuffled.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+
+  const nums = ['①', '②', '③', '④'];
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+
+  // 보기 순서 랜덤 섞기 (정답 인덱스 추적)
+  let indices = [0, 1, 2, 3];
+  let shuffledIndices = shuffle(indices);
+  let newAnswerPos = shuffledIndices.indexOf(q.answer);
+
+  shuffledIndices.forEach((origIdx, pos) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.innerHTML = `<span class="num">${nums[pos]}</span>${q.options[origIdx]}`;
+    btn.onclick = () => selectAnswer(pos, newAnswerPos, btn);
+    container.appendChild(btn);
+  });
+}
+
+function selectAnswer(selected, correct, btn) {
+  if (answered) return;
+  answered = true;
+  const btns = document.querySelectorAll('.option-btn');
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    if (i === correct) b.classList.add('correct');
+    else if (i === selected && selected !== correct) b.classList.add('wrong');
+  });
+  if (selected === correct) score++;
+  document.getElementById('explanation').classList.add('show');
+  document.getElementById('nextBtn').classList.add('show');
+  document.getElementById('nextBtn').textContent =
+    current + 1 < shuffled.length ? '다음 문제 →' : '결과 보기';
+}
+
+function nextQuestion() {
+  current++;
+  if (current >= shuffled.length) {
+    showResult();
+  } else {
+    loadQuestion();
+  }
+}
+
+function showResult() {
+  document.getElementById('quizCard').style.display = 'none';
+  document.getElementById('nextBtn').classList.remove('show');
+  document.getElementById('counter').textContent = '';
+  document.getElementById('progressBar').style.width = '100%';
+
+  const total = shuffled.length;
+  const pct = Math.round((score / total) * 100);
+  document.getElementById('resultScore').textContent = score + ' / ' + total;
+  document.getElementById('resultCard').classList.add('show');
+
+  let msg = '';
+  if (pct >= 90) msg = '완벽합니다! 🎉';
+  else if (pct >= 70) msg = '잘 하셨어요! 💪';
+  else if (pct >= 50) msg = '조금 더 복습이 필요해요 📖';
+  else msg = '다시 한 번 도전해 보세요 🔄';
+  document.getElementById('resultMsg').textContent = msg;
+}
+
+function restart() {
+  start();
+}
+
+start();
+</script>
+</body>
+</html>
