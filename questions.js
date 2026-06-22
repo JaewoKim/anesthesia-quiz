@@ -1,109 +1,5 @@
 const QUESTIONS = [
   {
-    "q": "전공의가 술기시행 중 사고발생시 지도전문의에게 책임을 묻는 원리?",
-    "options": [
-      "분업 신뢰의 원칙",
-      "주의의무의 원칙",
-      "지시책임의 원칙",
-      "?"
-    ],
-    "answer": 2,
-    "exp": "지도책임의 원칙은 전공의(피지도자)가 단독으로 적정 술기를 수행할 역량·자격을 아직 갖추지 못한 상태에서, 지도전문의가 직접 지도·감독해야 할 주의의무를 다하지 못해 사고가 발생한 경우 그 감독 소홀을 근거로 지도자에게 책임을 귀속시키는 법리로, 대등한 전문가 간 책임을 분산시키는 \"분업·신뢰의 원칙(2번)\"과 정반대로 적용된다. 즉 피지도자의 미숙·무자격이 예견 가능한 상황에서는 신뢰의 원칙이 배제되고 지도전문의의 선임·감독상 과실(민법 제756조 사용자책임·의료법상 지도감독의무)이 인정되는 것이 핵심 기전이다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "약력학과 약동학에 대한 다음 설명 중 옳은 것은?",
-    "options": [
-      "Ke0는 중심구획에서 말초구획으로의 속도 상수이다.",
-      "0차 역학을 따르는 경우 시간당 일정량의 약물이 감소한다.",
-      "청소율은 제거속도 상수를 분포 용적으로 나누어 계산한다.",
-      "이력 현상은 중심구획과 말초구획의 농도차에 의해 발생한다."
-    ],
-    "answer": 1,
-    "exp": "0차 역학(zero-order kinetics)은 대사효소·수송체가 포화되어 농도와 무관하게 단위시간당 **일정량(constant amount)**이 제거되는 양상으로, 페니토인 고용량·에탄올·고용량 aspirin이 대표적이며 따라서 보기 2번이 옳습니다(Stoelting's Pharmacology & Physiology in Anesthetic Practice). 나머지는 ① Ke0는 혈장-효과처(effect-site) 평형 속도상수로 중심→말초는 k12이고, ③ 청소율은 Cl = Ke × Vd(곱)이며, ④ 이력현상(hysteresis)은 혈장농도와 효과처농도 간 시간지연(ke0)에 기인하고, ⑤ 분포용적은 Vd = 약물량 ÷ 농도(나눗셈)이므로 모두 틀렸습니다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "남자, 60갑년 흡연력 복강경 위절제술 받는 중, pip가 증가한 그래프 (두 개 그래프 제시되었는데, plateau pr.",
-    "options": [
-      "I:E ratio 올린다.",
-      "호기말 양압을 올린다.",
-      "기도내관 흡인한다.",
-      "일회 호흡량을 줄인다."
-    ],
-    "answer": 2,
-    "exp": "최고기도압(PIP)은 상승했으나 안정기압(plateau pressure)이 정상이라는 것은 폐·흉벽 유순도는 보존된 채 **기도 저항만 증가**했음을 의미하며(PIP−plateau = 저항 성분), 이때 호기말 양압·일회호흡량·호흡수 조절이나 I:E 비 조정은 저항 자체를 해소하지 못합니다. 60갑년 흡연력의 COPD 의심 환자에서 기도 저항 급증의 가장 흔하고 즉시 교정 가능한 원인은 **분비물·점액에 의한 기관내관 폐쇄**이므로, 기도내관 흡인이 정답입니다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "Isoflurane과 remifentanil로 마취 중 가장 영향이 적은 것은?",
-    "options": [
-      "BAEP",
-      "MEP",
-      "SSEP",
-      "VEP"
-    ],
-    "answer": 0,
-    "exp": "BAEP는 청신경·뇌간 청각경로에서 발생하는 단순 oligosynaptic(소수 시냅스) 전위로, 흡입마취제(isoflurane)와 opioid에 거의 영향받지 않아 술중 감시에서 가장 안정적인 modality입니다(Sloan, *J Clin Neurophysiol* 2002). 반면 다수의 피질 시냅스를 경유하는 MEP·SSEP·VEP는 isoflurane의 시냅스 억제에 민감하며, 특히 VEP는 피질 의존도가 가장 높아 마취 영향이 제일 큽니다(Banoub, *Anesthesiology* 2003).",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "젊은 여자환자 160cm에 118kg BMI 45인 환자가 bariatric 수술하러 내원하였다. 특이 과거력 없었고 PaO2",
-    "options": [
-      "그냥 예정대로 수술한다",
-      "obese hypoventilation syndrome에 의해 central ventilatory drive가 저하되어 있다.",
-      "수술 전 비만치료로 먹던 약들은 수술에 크게 영향 미치지 않는다",
-      "IV잡기 힘드므로 IM으로 약 준다"
-    ],
-    "answer": 1,
-    "exp": "해설: 고도비만(BMI 45)에서는 만성 야간 저환기로 인한 CO₂ 축적이 지속되면 중추 화학수용체가 고탄산혈증에 둔감해져(reset) central ventilatory drive가 저하되고, 이로 인해 주간 고탄산혈증(PaCO₂ >45 mmHg)과 저산소혈증을 동반하는 obese hypoventilation syndrome(Pickwickian syndrome)이 발생한다 — 따라서 보기 2번이 정답이다. 임상적으로 이런 환자는 마약성 진통제·벤조디아제핀 등에 의한 호흡억제 위험이 크므로 깊은 진정(5번)은 금기이며, OHS·OSA 평가와 수술 전 최적화가 필요하다(근거: Miller's Anesthesia, OHS 진단기준 BMI≥30 + 주간 PaCO₂≥45 mmHg).",
-    "cat": "호흡/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "67세 여환 낙상후에 지속되는 등허리통증으로 내원했다. 이학적 검사 상 흉요추 이행부에 압통, 타진통이 있",
-    "options": [
-      "흉추 9,10,11번 후지내측지",
-      "흉추 10,11,12번 후지내측지",
-      "흉추 11,12번, 요추 1번후지내측지",
-      "흉추 12번, 요추 1,2번후지내측지"
-    ],
-    "answer": 1,
-    "exp": "해설: 후관절(zygapophyseal joint)은 한 분절이 **같은 레벨과 바로 위 레벨 후지내측지(medial branch)의 이중 분절 지배**를 받으므로, 흉요추 이행부 압통의 책임 관절인 T11–T12 및 T12–L1 후관절을 모두 차단하려면 T10·T11·T12 내측지를 표적해야 한다. 또한 흉추 내측지는 횡돌기 상연·상관절돌기 기저부의 일정한 골성 표지를 따라 주행해 이 세 레벨을 묶어 차단하는 것이 진단적·치료적 medial branch block의 해부학적 근거가 된다(Bogduk, *Practice Guidelines for Spinal Diagnostic Procedures*).",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "이질통 발생기전, 연관된 신경섬유는?",
-    "options": [
-      "A-alpha",
-      "A-beta",
-      "A-delta",
-      "C fiber"
-    ],
-    "answer": 1,
-    "exp": "이질통(allodynia)은 정상적으로 통증을 전달하지 않는 굵은 유수신경섬유인 **Aβ-fiber**가, 신경손상 후 척수후각의 중추감작(central sensitization)·시냅스 재배선으로 인해 통각경로로 잘못 연결되면서 가벼운 촉각 자극이 통증으로 인지되는 현상이다(정답 2번). 반면 A-delta·C fiber는 본래 통각 수용기로서 정상 통증(nociceptive pain)을 매개하므로 이질통의 핵심 기전 섬유가 아니다(근거: Woolf CJ, *Pain* 2011 중추감작 리뷰; IASP allodynia 정의).",
-    "cat": "신경/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "glycocalyx model에서 모세혈관압이 10mmHg일때혈장량 가장 증가하는 모세혈관압 및 수액은? (뭐 이런거 같",
-    "options": [
-      "5mmHg,0.45% NS 760ml",
-      "5mmHg, 0.9% NS 760ml",
-      "5mmHg, 5%albumin 250ml",
-      "15mmHg,0.45% NS 760ml"
-    ],
-    "answer": 1,
-    "exp": "**해설:** 개정 Starling(glycocalyx) 모델에서는 모세혈관압이 낮을수록(5mmHg) 글리코칼릭스 하부 간질의 oncotic 구배가 유지되어 *재흡수는 일어나지 않고 여과(filtration)만 최소화*되므로 투여 수액이 혈관 내에 더 오래 잔류하고, 같은 저압 조건에서는 세포내로 분포하는 저장성 0.45% NS보다 세포외액에 국한되는 등장성 0.9% NS가 혈장량을 더 많이 늘린다. 따라서 저압(5mmHg) + 등장성 대용량(760ml) 조합이 5% albumin 250ml(투여량 자체가 1/3 수준)보다 절대 혈장량 증가가 커 정답이 된다(Woodcock & Woodcock, *Br J Anaesth* 2012; revised Starling principle).",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
     "q": "TKRA한 환자에서 통증조절을 위해 block하려고 한다. 재활을 위해 최대한 운동신경을 보전하기 위한 방법",
     "options": [
       "femoral n. block",
@@ -112,164 +8,8 @@ const QUESTIONS = [
       "adductor canal block"
     ],
     "answer": 3,
-    "exp": "복재신경(saphenous nerve) 등 주로 감각분지를 차단하는 adductor canal block은 대퇴사두근(quadriceps)으로 가는 운동분지를 대부분 보존하여, femoral nerve block 대비 사두근 근력 약화와 낙상 위험이 적어 TKRA 후 조기 재활·보행에 유리하다(Jaeger et al., Anesthesiology 2013 — 사두근 근력 보존 우월성 RCT). Fascia iliaca block과 femoral nerve block은 대퇴신경 운동분지를, obturator block은 내전근 운동신경을, popliteal block은 하퇴 운동신경을 차단하므로 운동신경 보존 목적에는 부적합하다.",
+    "exp": "Adductor canal block은 대퇴신경의 감각분지인 복재신경(saphenous n.)과 무릎관절 가지를 선택적으로 차단해 슬관절 전내측의 통증을 조절하면서, femoral n. block과 달리 대퇴사두근으로 가는 운동신경 차단이 최소화되어 근력과 보행이 보존됩니다. 따라서 TKRA 후 조기 재활과 보행 훈련이 핵심인 상황에서 quadriceps weakness로 인한 낙상 위험을 줄이면서 진통을 제공할 수 있어 운동신경 보전 측면에서 가장 적합합니다(근거: Jaeger et al., *Anesthesiology* 2013 — ACB가 FNB 대비 quadriceps strength 유의하게 보존).",
     "cat": "신경/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "burst suppression 일으키는 마취제는?",
-    "options": [
-      "desflurane",
-      "N2O",
-      "ketamine",
-      "fentanyl"
-    ],
-    "answer": 0,
-    "exp": "흡입마취제인 desflurane은 GABA-A 수용체를 강화하고 피질 신경활동을 농도의존적으로 억제하여, 고용량(대략 1.5 MAC 이상)에서 EEG상 평탄구간과 고진폭 활동이 교대로 나타나는 burst suppression을 유발한다(volatile anesthetics·propofol·barbiturate 공통 기전). 반면 N2O와 ketamine은 NMDA 길항제로 오히려 고주파 활동을 증가시키고, fentanyl(μ-opioid)과 dexmedetomidine(α2 작용제, 자연수면 유사 뇌파)은 단독으로 burst suppression을 일으키지 못한다.",
-    "cat": "약리",
-    "lvl": "기본"
-  },
-  {
-    "q": "periOP MI에 관하여 옳은 것은?",
-    "options": [
-      "Type II MI이다.",
-      "수술 후 24시간 이후에 잘생긴다.",
-      "수술 중 허혈은 ST elevation이 많다.",
-      "허혈은 transmural injury가 많다."
-    ],
-    "answer": 0,
-    "exp": "해설: 주산기 심근경색의 대다수는 빈맥·저혈압·빈혈·저산소증에 의한 산소 수요-공급 불균형으로 발생하는 **Type II MI**로, 급성 죽상반 파열·혈전(Type I)보다 흔하다(보기 1 정답). 따라서 허혈은 심내막하(subendocardial)에 국한되어 ST 하강(ST depression)으로 나타나는 경우가 많고, transmural injury나 ST 상승은 드물며, 발생 시점도 수술 후 24시간 이후가 아니라 첫 48시간 이내(특히 24~48시간)에 집중된다(보기 2·3·4 오답).",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "50cm 3.2kg 생후2개월 남아 전신마취 하에 서혜부 탈장 수술 예정이다. 32주 출생..당시 일주일간 기계호흡",
-    "options": [
-      "당일 입퇴원이 가능하다.",
-      "모유수유 시 4시간 금식한다.",
-      "통증 조절은 필요하지 않다.",
-      "마취직후 수혈을 한다."
-    ],
-    "answer": 1,
-    "exp": "해설: ASA 금식 가이드라인상 모유는 위 배출이 빠른 반고형식과 달리 4시간이면 위에서 충분히 비워지므로(맑은 액체 2시간·조제분유 6시간·고형식 6시간과 구분), 정답은 모유수유 4시간 금식이다. 나머지 보기는 32주 출생·1주 기계호흡 기왕력의 교정연령 약 40주 미숙아로서 수술 후 무호흡(postoperative apnea) 고위험군이라 당일 퇴원 불가(교정연령 60주까지 야간 입원·무호흡 모니터링 필요)이고, 수술 통증 조절은 반드시 필요하며, 일률적 수혈 적응증이 없고, 미숙아 망막병증(ROP) 위험 때문에 고농도 산소 노출은 피해 SpO₂ 목표 범위 내 최소 산소를 사용해야 하므로 모두 오답이다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "노인에서 하지수술 시 전신마취에 비해 부위마취의 장점은?",
-    "options": [
-      "전신마취보다 폐합병증이 감소한다.",
-      "전신마취보다 인지기능 감소한다.",
-      "부위마취에서 DVT 발생이 적다.",
-      "부위마취에서 출혈이 적다."
-    ],
-    "answer": 3,
-    "exp": "정답: 부위마취에서 출혈이 적다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "인지기능 괜찮은 노인. 신경통에 대해 지속적, 효과적으로 통증을 관리하기 좋은, 응답률도 좋은 다음 통증",
-    "options": [
-      "Visual analogue scale",
-      "Numeric rating scale",
-      "Visual rating scale",
-      "Mcgill pain index"
-    ],
-    "answer": 1,
-    "exp": "해설: Numeric rating scale(NRS)는 0–10 정수 척도로 노인이 숫자만 답하면 되어 인지 부담과 시각·운동 협응 요구가 낮고, 구두(전화 포함)로도 시행 가능해 만성 신경통의 반복적·지속적 추적에서 완료율(응답률)이 VAS보다 높다는 근거가 있습니다(VAS는 선상 표시·미세운동·시력 요구로 노인 미완성·오류율이 높음). McGill pain index는 통증의 질을 다차원적으로 평가하나 어휘·시간 부담이 커 반복 모니터링에 부적합하고, behavior rating scale은 자가보고가 가능한 인지 정상 환자에서는 1차 선택이 아니어서 NRS가 정답입니다.",
-    "cat": "신경/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "반폐쇄식 호흡회로로 전신마취 중 이산화탄소 흡수제가 고갈되었다. 고탄산혈증을 줄이기 위한 방법은?",
-    "options": [
-      "100% 산소를 공급한다.",
-      "신선가스유량을 증가시킨다.",
-      "일회호흡량을 증가시킨다.",
-      "용수환기를 시행한다."
-    ],
-    "answer": 1,
-    "exp": "반폐쇄식 회로에서 흡수제가 고갈되면 호기 CO₂가 회로 내에 재호흡되어 고탄산혈증이 발생하므로, 신선가스유량을 충분히 높이면(분당환기량을 초과하는 고유량) 회로가 사실상 반개방식처럼 작동하여 CO₂가 함유된 호기가스가 재호흡되기 전에 배기밸브로 씻겨 나간다. 100% 산소 공급·일회호흡량 증가·용수환기는 환기량만 늘릴 뿐 이미 흡입되는 CO₂ 자체를 제거하지 못하고, 아산화질소 중단도 저산소증 예방과는 관련 있으나 고탄산혈증 교정과는 무관하다(Miller's Anesthesia, breathing system rebreathing 원리).",
-    "cat": "호흡/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "7세 환아 3시간 전에 물 100ml 마셨고, 수술직전까지 껌 씹었다. 어떻게 해야 되나?",
-    "options": [
-      "8시간연기",
-      "6시간연기",
-      "4시간연기",
-      "2시간연기"
-    ],
-    "answer": 3,
-    "exp": "해설: 맑은 액체(물 100 mL)는 ASA 금식 지침상 마취 2시간 전까지 허용되므로 3시간 경과한 본 환아는 흡인 위험 기준을 충족하며, 껌은 위액 분비를 약간 늘리지만 위 내용물 부피·pH를 임상적으로 의미 있게 변화시키지 않아 2023 ASA 가이드라인은 껌 저작만을 이유로 한 수술 연기를 권고하지 않는다. 따라서 추가 금식 없이 예정대로 수술을 진행하는 것이 옳다(근거: ASA Practice Guidelines for Preoperative Fasting, 2023 update).",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "isoflurane, sevoflurane, desflurane 중에서 관상동맥 이완 가장 많이 하는 것과 적게 하는 것은?",
-    "options": [
-      "sevoflurane - isoflurane",
-      "sevoflurane - desflurane",
-      "Isoflurane – sevoflurane",
-      "isoflurane - desflurane"
-    ],
-    "answer": 2,
-    "exp": "해설: Isoflurane은 직경 100 μm 이하의 관상동맥 저항세동맥(resistance arteriole)을 직접 확장시키는 작용이 휘발성 마취제 중 가장 강해, 협착 부위 원위부 혈류를 정상 분지로 빼앗는 관상동맥 도류현상(coronary steal)이 고전적으로 우려되었다. 반면 sevoflurane은 세 약제 중 직접적인 관상동맥 확장 효과가 가장 약하며, desflurane은 중간 정도여서 정답은 isoflurane(최대)–sevoflurane(최소)이다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "다음 중 노인에서 brain sensitivity의 증가로 투여량을 감량해야 하는 것은?",
-    "options": [
-      "Cisatracurium",
-      "Etomidate",
-      "Propofol",
-      "Vecuronium"
-    ],
-    "answer": 2,
-    "exp": "노인에서 propofol은 약동학적 청소율 감소뿐 아니라 뇌의 약력학적 민감도 자체가 증가하여(동일 효과부위 농도에서 더 깊은 진정·BIS 저하 발생) 유도·유지 용량을 모두 감량해야 한다. 반면 cisatracurium·vecuronium은 신경근접합부에 작용하고, etomidate·thiopental(pentothal)의 노인 감량은 주로 중심구획 분포용적 감소 등 약동학적 변화에 기인하므로 \"brain sensitivity 증가\"라는 약력학적 기전과는 거리가 있다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "혈액가스 분배계수에 관한 설명 중 옳은 것은?",
-    "options": [
-      "분배계수가 작으면potency 가 크다.",
-      "계수가 낮으면 마취유도가 지연된다.",
-      "분배계수가 1.8이라는 것은 혈액과 폐포의 가스 분압차가 1.8배라는 뜻이다.",
-      "평형상태는 혈액과 폐포의 마취가스 분압이 같아 가스 이동이 없는 상태이다."
-    ],
-    "answer": 3,
-    "exp": "해설: 혈액가스 분배계수(blood:gas partition coefficient)는 평형상태에서 혈액과 폐포의 마취가스 **분압**이 동일해져 더 이상 순(net) 이동이 없는 상태를 정의하는 값으로, 보기 4가 옳다(분배계수는 분압이 같아진 평형에서 혈액에 용해된 가스의 농도/양 비율을 의미하므로 보기 3의 \"분압차 1.8배\"는 틀림). 분배계수가 낮을수록 혈액 용해도가 작아 폐포 분압이 빠르게 상승해 마취유도가 **빨라지며**(보기 2 오답), potency는 혈액가스계수가 아니라 지질가스 분배계수(MAC와 반비례)로 결정되므로 보기 1도 틀리다(Miller's Anesthesia 기준).",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "승모판 질환을 앓고 있는 임산부가 LMWH으로 항응고치료를 받고 있다. 경막외 카테터를 제거하던 중 카",
-    "options": [
-      "2시간 후",
-      "6시간 후",
-      "12시간 후",
-      "24시간 후"
-    ],
-    "answer": 3,
-    "exp": "해설: 승모판 질환으로 치료용량(therapeutic dose) LMWH를 투여받는 환자에서는 항-Xa 활성이 충분히 소실되어 척수경막외 혈종 위험이 최소화되도록, 마지막 투여 후 **24시간**이 경과한 뒤 경막외 카테터를 조작·제거해야 한다(ASRA 2018 신경축 차단-항응고 가이드라인 기준). 이는 예방용량 LMWH의 12시간 대기와 구별되며, 치료용량은 반감기(약 4~7시간)의 3~5배에 해당하는 시간을 확보해 잔존 항응고 효과로 인한 출혈성 합병증을 예방하기 위함이다.",
-    "cat": "부위마취",
-    "lvl": "기본"
-  },
-  {
-    "q": "위궤양 있는 환자 무릎 관절염 통증 무슨약?",
-    "options": [
-      "aspirin",
-      "naproxen",
-      "celecoxib",
-      "ibuprofen"
-    ],
-    "answer": 2,
-    "exp": "해설: Celecoxib는 선택적 COX-2 억제제로, 위점막 보호 prostaglandin 합성을 담당하는 COX-1을 보존하기 때문에 비선택적 NSAID(aspirin·naproxen·ibuprofen) 및 COX-2 선호적이지만 고용량에서 COX-1도 억제하는 meloxicam보다 소화성 궤양·출혈 위험이 낮다(CLASS trial; ACG NSAID 가이드라인). 따라서 활동성 위궤양 병력 환자의 골관절염 통증에는 위장관 안전성이 가장 우수한 celecoxib가 적합하며, 위험도가 높을 경우 PPI 병용을 추가로 고려한다.",
-    "cat": "마취일반",
     "lvl": "기본"
   },
   {
@@ -281,8 +21,203 @@ const QUESTIONS = [
       "Oximetry는뇌 심부조직의 산소포화도를 측정한다."
     ],
     "answer": 3,
-    "exp": "해설: TCD(transcranial Doppler)는 중대뇌동맥(MCA) 등 대혈관의 혈류 *속도*를 간접 지표로 측정할 뿐 허혈 자체를 직접 측정하지 못하며, cerebral oximetry(NIRS)는 전두엽 피질 등 뇌 심부조직이 아닌 표재성 피질의 국소 산소포화도(rSO₂, 동맥+정맥 혼합 혈액)를 반영한다. 따라서 보기 1·2·3·4는 모두 측정 대상을 잘못 기술한 것이고, NIRS의 rSO₂는 기저치 대비 약 20% 감소를 허혈 의심 기준으로 흔히 인용하나 절대값·변화율에 대한 **표준화된 절대 임계치가 확립되어 있지 않아** 보기 5가 정답이다 (근거: Miller's Anesthesia 9th ed. neuromonitoring 챕터; Thiele et al., *Anesth Analg* 2015 NIRS 리뷰).",
+    "exp": "해설: TCD(경두개 도플러)는 중대뇌동맥 등 굵은 기저 뇌동맥의 혈류 \"속도\"를 측정하는 간접 지표일 뿐 뇌허혈 자체를 직접 측정하지 못하고(보기1·2 오류), cerebral oximetry(NIRS)는 전두엽 피질의 동·정맥 혼합 조직 산소포화도(주로 정맥혈 가중)를 보는 것이라 순수 동맥 산소포화도가 아니다(보기3 오류). NIRS는 측정값이 기기·환자별 베이스라인 의존성이 크고 절대값이나 감소율(%)에 대한 보편적 허혈 임계치가 확립되어 있지 않아, CEA 중 shunt 적용 판단의 단독 기준으로 쓰기 어렵다는 점에서 보기5가 정답이다.",
     "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "추간판 탈출증으로 MRI를 찍으려 하는데 환자가 통증이 너무 심하고 호흡곤란증세가 있어서 MAC으로 검",
+    "options": [
+      "단일 정맥마취제로도 충분하다.",
+      "중등도 진정으로 진행한다.",
+      "Ketamine은 진통 효과는 강하지만 구역, 구토가 심하고 회복이 느리다.",
+      "MRI검사 도중 진정상태가 변하지 않는다."
+    ],
+    "answer": 2,
+    "exp": "해설: Ketamine은 NMDA 수용체 길항을 통해 해리성 마취와 강력한 진통을 제공하면서 자발호흡·기도반사·교감신경 긴장을 유지하므로, 기도 접근이 제한되는 MRI 환경에서 호흡곤란 환자에게 이론적 이점이 있으나, 본 문항의 정답대로 구역·구토와 분비물 증가, 응급반응(emergence reaction) 및 상대적으로 느린 회복이라는 단점을 동반한다. 따라서 MAC에서 단독 고용량보다는 propofol 등과의 저용량 병용(소위 ketofol)으로 진통은 살리고 오심·회복 지연을 줄이는 전략이 임상적으로 권장된다(Miller's Anesthesia, NMDA 길항제 약리 기전).",
+    "cat": "약리",
+    "lvl": "기본"
+  },
+  {
+    "q": "isoflurane, sevoflurane, desflurane 중에서 관상동맥 이완 가장 많이 하는 것과 적게 하는 것은?",
+    "options": [
+      "sevoflurane - isoflurane",
+      "sevoflurane - desflurane",
+      "Isoflurane – sevoflurane",
+      "isoflurane - desflurane"
+    ],
+    "answer": 2,
+    "exp": "해설: Isoflurane은 관상동맥 미세저항혈관(small resistance arterioles)을 가장 강하게 확장시켜 협착 원위부 측부순환 의존 영역의 혈류를 정상 영역으로 빼앗는 \"coronary steal\" 현상과 역사적으로 연관된 반면, sevoflurane은 세 약제 중 관상동맥 확장 작용이 가장 약하다. 따라서 직접적 관상동맥 혈관확장 정도는 isoflurane > desflurane > sevoflurane 순서이며, 정답은 ③ Isoflurane–sevoflurane이다.",
+    "cat": "순환/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "50cm 3.2kg 생후2개월 남아 전신마취 하에 서혜부 탈장 수술 예정이다. 32주 출생..당시 일주일간 기계호흡",
+    "options": [
+      "당일 입퇴원이 가능하다.",
+      "모유수유 시 4시간 금식한다.",
+      "통증 조절은 필요하지 않다.",
+      "마취직후 수혈을 한다."
+    ],
+    "answer": 1,
+    "exp": "정답이 모유수유 4시간 금식인 이유는 ASA 금식 가이드라인상 모유는 위 배출 시간을 고려해 4시간(맑은 액체 2시간, 분유·우유 6시간)으로 권고되기 때문이다. 나머지는 모두 오답으로, 재태 32주·인공호흡력이 있는 교정연령 약 40주 미숙아는 60주 미만까지 수술 후 무호흡 위험으로 당일퇴원 불가(1번)·최소 12~24시간 무호흡 모니터링이 필요하고, 신생아도 통증을 느끼므로 진통이 필수이며(3번), 적응증 없는 예방적 수혈(4번)과 미숙아망막병증을 유발하는 60% 고농도 산소(5번)는 피해야 한다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "환자에게 급하게 RBC 4개를 universal O Rh- 수혈했다. 이후 확인된 환자 혈액형은 A Rh+ 이었다. 3일 뒤",
+    "options": [
+      "A Rh+",
+      "A Rh-",
+      "O Rh+",
+      "O Rh-"
+    ],
+    "answer": 3,
+    "exp": "해설: O형 적혈구는 A·B 항원이 없어 환자의 항-A 항체와 반응하지 않고, Rh⁻ 적혈구 역시 Rh⁺ 환자에게 면역학적으로 안전하므로 응급 상황에서 추가 수혈이 필요하면 환자 본래 혈액형으로 성급히 전환하지 말고 O Rh⁻를 계속 투여하는 것이 원칙이다(massive transfusion 시 수혈된 O형 적혈구가 순환혈액의 상당 부분을 차지해 ABO 정형검사가 교란될 수 있어, 환자 혈청 내 항-A 역가가 충분히 감소하고 정·역형 일치가 재확인될 때까지 type-specific 전환을 미룬다). 3일 경과만으로는 다량 수혈된 동종 적혈구가 아직 충분히 제거되지 않아 안전한 전환 시점으로 보기 어렵고, O Rh⁻는 모든 수혈자에게 적합한 보편 공혈혈액이므로 정답은 O Rh⁻이다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "Acute tubular necrosis에 합당한 소견을 고르시오",
+    "options": [
+      "fractionexcretion of sodium = 1",
+      "hyaline cast in urine sediment",
+      "urine creatine /plasma creatine 30",
+      "urine osmolality 300mOsm"
+    ],
+    "answer": 3,
+    "exp": "급성 세뇨관 괴사(ATN)에서는 손상된 세뇨관 상피가 수분 재흡수·농축 기능을 상실하여 소변이 혈장과 등장성(약 300 mOsm/kg)을 보이는 등장뇨(isosthenuria)가 특징입니다. 나머지 보기(FENa<1, U/P creatinine>40, urine Na<20, hyaline cast)는 세뇨관 기능이 보존된 신전성(prerenal) 질소혈증 소견으로, ATN에서는 반대로 FENa>2, 진흙빛 과립원주(muddy-brown granular cast)가 관찰됩니다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "태아와 산모 간의 혈장약물농도(F/M ratio)가 제일 작은 약물은?",
+    "options": [
+      "Ketamine",
+      "Ephedrine",
+      "Bupivacaine",
+      "Rocuronium"
+    ],
+    "answer": 3,
+    "exp": "Rocuronium은 4차 암모늄(quaternary ammonium) 구조로 고도로 이온화되어 있고 수용성·고분자량이어서 지질친화성이 낮아 태반(lipid membrane)을 거의 통과하지 못하므로 F/M ratio가 약 0.16으로 가장 낮습니다. 반면 ketamine·bupivacaine·sufentanil은 지용성·비이온화 비율이 높고 ephedrine도 분자량이 작아 수동확산으로 태반을 잘 통과하므로 F/M ratio가 훨씬 높습니다(예: ketamine ~1.26).",
+    "cat": "약리",
+    "lvl": "기본"
+  },
+  {
+    "q": "70세 남자환자가 7일전 중심정맥관 삽입하고 경정맥영양을 시작하였다. 갑자기 체온 38.5 도 혈압80/50 맥",
+    "options": [
+      "경험적 항진균제 micafungin 을 투여한다",
+      "카테터를 유지하면서 2세대cephalosporin 으로 교체한다",
+      "카테터를 제거하고 meropenem 을 투여한다",
+      "카테터를 제거하고 vancomycin 을 투여한다"
+    ],
+    "answer": 3,
+    "exp": "해설: 7일 경과한 중심정맥관 + 경정맥영양(TPN)은 카테터 관련 혈류감염(CRBSI)의 전형적 상황으로, 패혈성 쇼크(혈압 80/50)가 동반된 단기 비터널형 카테터는 감염원 제거(source control)를 위해 즉시 제거하고, 가장 흔한 원인균인 그람양성균(특히 MRSA·coagulase-negative staphylococci)을 경험적으로 겨냥해 vancomycin을 투여해야 한다(IDSA CRBSI 2009 가이드라인). 2세대 cephalosporin은 MRSA를 못 덮고, micafungin은 칸디다 위험인자(장기 TPN·광범위 항생제·면역저하)가 누적된 후에 고려하며, 쇼크 환자에서 배양 결과를 기다리는 것은 금기다.",
+    "cat": "순환/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "68세 여자 155cm 50kg, 21세 남자170cm 50kg 전정맥마취 시행하는데 목표효과처농도 3ug/ml 로 설정하여",
+    "options": [
+      "schnider",
+      "marsh",
+      "minto",
+      "scott"
+    ],
+    "answer": 1,
+    "exp": "Marsh 모델은 총체중(TBW)만을 유일한 공변량으로 사용하여 중심구획 용적과 청소율을 체중에 비례시키므로, 나이·키·성별이 달라도 체중이 동일한 두 환자(둘 다 50kg)에게는 완전히 같은 효과처농도 3μg/mL 도달 용량을 산출한다. 반면 Schnider는 나이·키·체중·제지방체중(LBM)을 모두 반영하고 Minto는 remifentanil용, Scott·Hudson은 fentanyl/alfentanil 계열 모델이므로 propofol을 체중 기반으로 단순 표적할 때 두 환자에게 동일 용량이 나오는 모델은 Marsh뿐이다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "폐 좌상엽에 6cm 크기의 bulla 가 있어서 절제술 예정.",
+    "options": [
+      "a line",
+      "b line",
+      "lung slide",
+      "lung pulse"
+    ],
+    "answer": 3,
+    "exp": "폐 거대 bulla는 흉막 초음파에서 lung sliding·B-line·lung pulse가 모두 소실되어 기흉과 동일하게 보일 수 있어 감별이 어렵지만, lung point(허탈된 폐와 정상 환기 폐의 경계가 호흡주기에 따라 화면에서 왔다 갔다 하는 지점)는 오직 진성 기흉에서만 관찰되는 100% 특이도의 소견이다. Bulla는 흉벽 전체에 걸쳐 무환기 패턴이 균질하게 나타날 뿐 환기 폐와의 동적 경계가 없으므로 lung point가 보이지 않으며, 따라서 lung point의 유무가 bulla를 기흉으로 오인하지 않게 해 주는 결정적 감별점이다.",
+    "cat": "호흡/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "75세 여자환자가 등 통증을 주소로 내원 하였다. 단순 방사선 촬영상 T7,11에 압박 골절 소견을 보였다. 이",
+    "options": [
+      "CT",
+      "Bone Scan",
+      "단순 방사선 촬영",
+      "체열 검사"
+    ],
+    "answer": 3,
+    "exp": "MRI는 STIR/T2 강조영상에서 골수 부종(bone marrow edema) 신호를 통해 급성·증상성 압박골절과 진구성(만성) 골절을 감별할 수 있어, 다발성 병변(T7·T11) 중 실제 통증을 유발하는 책임 분절을 특정하는 데 필수적이다. 또한 연부조직·척수·신경근 압박 및 악성 종양에 의한 병적 골절 여부까지 평가할 수 있어, 척추성형술(vertebroplasty)·골다공증 치료 방침 결정에 가장 적합한 검사이다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "LD50, ED50, LD1, ED99가 표기된 다음 그래프를 보고 맞는 내용을 고르세요.",
+    "options": [
+      "ED99 < LD50이므로 임상에서 사용할 수 있다.",
+      "ED50 < LD50이므로 임상에서 사용하기 적합한 약제이다.",
+      "LD1 < ED99이므로 임상에서 사용하기 부적합한 약제이다.",
+      "ED50 < LD1이므로 임상에서 사용할 수 있다."
+    ],
+    "answer": 2,
+    "exp": "약물의 안전성은 단순히 LD50/ED50 비(치료지수)가 아니라 용량-반응 곡선의 겹침 정도로 판단해야 하며, **확실안전역(margin of safety = LD1/ED99)**이 1보다 커야(즉 ED99 < LD1) 99%에서 효과를 내는 용량에서도 사망이 거의 발생하지 않아 임상 사용이 적합합니다. 제시된 그래프처럼 **LD1 < ED99**이면 충분한 약효(ED99)에 도달하기 전에 이미 일부 환자에서 치사(LD1)가 발생하는 곡선 중첩 구간이 존재하므로, 치료지수가 양호해 보여도 실제로는 안전역이 음(陰)이 되어 임상 사용에 부적합합니다.",
+    "cat": "약리",
+    "lvl": "기본"
+  },
+  {
+    "q": "기저질환 없는 40세 남자, 위전절제술 끝나간다. T1 87%, TOF ratio 66%. 시행할 것은?",
+    "options": [
+      "neostigmine 0.02mg/kg",
+      "sugammadex 4mg/kg",
+      "다른곳에서 신경근차단감시",
+      "PTC check."
+    ],
+    "answer": 0,
+    "exp": "TOF ratio 0.66은 사연축 모두 감지되는 중등도(moderate) 잔여 차단으로, T1이 87%까지 회복된 이 상태에서는 아세틸콜린에스터분해효소 억제제인 neostigmine 0.02mg/kg(저용량)이 시냅스 간극 ACh를 증가시켜 충분히 역전 가능하므로 정답입니다. Sugammadex 4mg/kg(보기 2)는 PTC 1–2의 deep block에서 쓰는 과용량이고, 즉시 발관(보기 5)은 TOF ratio ≥0.9 미충족이라 잔여 차단·흡인 위험으로 부적절합니다(2023 ASA Neuromuscular Blockade 가이드라인 기준).",
+    "cat": "모니터링",
+    "lvl": "기본"
+  },
+  {
+    "q": "혼합정맥혈 산소포화도 82%일 때 의심되는 상황은?",
+    "options": [
+      "혈색소 8",
+      "심박출량감소",
+      "패혈증",
+      "shivering"
+    ],
+    "answer": 2,
+    "exp": "정상 혼합정맥혈 산소포화도(SvO₂)는 약 75%이며, 82%로 상승한 것은 조직의 산소 추출·이용 장애를 시사하는데 패혈증에서는 미세순환 단락(microcirculatory shunting)과 미토콘드리아 기능장애로 인해 말초에서 산소를 제대로 추출하지 못해 SvO₂가 오히려 증가한다. 반면 혈색소 감소(빈혈), 심박출량 감소, shivering·체온상승(산소소비 증가)은 모두 산소 공급 대비 소비를 늘려 SvO₂를 **감소**시키므로 정답은 패혈증이다.",
+    "cat": "호흡/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "Isoflurane과 remifentanil로 마취 중 가장 영향이 적은 것은?",
+    "options": [
+      "BAEP",
+      "MEP",
+      "SSEP",
+      "VEP"
+    ],
+    "answer": 0,
+    "exp": "BAEP는 청각 유발전위의 발생원이 뇌간(brainstem auditory pathway, 와우신경핵·상올리브핵·하구)에 있어 피질 시냅스 의존도가 낮아 isoflurane 같은 흡입마취제와 remifentanil에 가장 저항성이 크다(volatile agent는 피질 시냅스 전달을 용량의존적으로 억제하므로 피질 성분이 큰 신호일수록 더 억압됨). 반면 VEP는 다중 피질 시냅스를 거쳐 흡입마취에 가장 예민하고, SSEP·MEP도 피질 성분이 있어 BAEP보다 진폭 감소·latency 증가가 뚜렷하다(근거: Sloan TB, *J Clin Neurophysiol* 2002; Banoub *Anesthesiology* 2003 IONM 마취 영향 리뷰).",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "퇴원 후 점수 구하는 문제. 혈압 원래의 20프로이내, 걷기 괜찮고, 어지럼 없음, 출혈 거의 없음, 중등도 오",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "6"
+    ],
+    "answer": 1,
+    "exp": "정답: 8",
+    "cat": "순환/생리",
     "lvl": "기본"
   },
   {
@@ -294,33 +229,98 @@ const QUESTIONS = [
       "전신관류량 감소"
     ],
     "answer": 2,
-    "exp": "해설: Hypothermic CPB에서 대동맥 겸자 후 pump flow를 올리면 동맥 캐뉼라를 통한 관류량과 함께 뇌로 전달되는 미세색전(공기·죽상반 debris)의 부하가 증가하여 뇌경색 발생률이 높아진다(고유량일수록 cerebral embolic load 증가, Stroke/Ann Thorac Surg CPB 관류 연구). 나머지 보기는 틀린데, 대동맥이 겸자된 상태이므로 관상동맥 혈류·심근보호는 pump flow가 아닌 cardioplegia에 의존하고(②⑤ 무관), 유량을 올리면 전신관류량은 오히려 증가하므로(④ 반대) 정답은 ③ 뇌경색 발생률 증가다.",
+    "exp": "대동맥 겸자 상태에서 pump flow를 올리면 관상동맥은 겸자로 차단되어 영향이 없으나, 대동맥 내 죽종(atheroma)·기포·미세색전(microemboli)이 증가한 유량을 따라 뇌혈류로 다량 전달되어 색전성 뇌경색 위험이 높아집니다. 따라서 고유량은 뇌 색전 부하(embolic load)를 증가시키므로 정답은 \"뇌경색 발생률 증가\"이며, 나머지 보기(심실확장 소실·심근보호 증가·전신관류 감소·관상동맥혈류 감소)는 cross-clamp 하 고유량의 생리와 반대되거나 무관합니다.",
     "cat": "마취일반",
     "lvl": "기본"
   },
   {
-    "q": "다음 중 POCD의 risk factor로 '가장' 관련 깊은 것은?",
+    "q": "67세 여환 낙상후에 지속되는 등허리통증으로 내원했다. 이학적 검사 상 흉요추 이행부에 압통, 타진통이 있",
     "options": [
-      "뇌졸중의 기왕력",
-      "고령",
-      "장시간의 전신마취",
-      "치매"
+      "흉추 9,10,11번 후지내측지",
+      "흉추 10,11,12번 후지내측지",
+      "흉추 11,12번, 요추 1번후지내측지",
+      "흉추 12번, 요추 1,2번후지내측지"
     ],
     "answer": 1,
-    "exp": "고령은 ISPOCD1 연구(Moller et al., *Lancet* 1998)에서 수술 후 장기 인지기능저하(POCD, postoperative cognitive dysfunction)의 유일하게 일관되게 입증된 독립적 위험인자로, 노화에 따른 신경세포 예비능(cognitive reserve) 감소·신경염증 취약성 증가·혈액뇌장벽 투과성 변화가 핵심 기전입니다. 뇌졸중 기왕력·치매·일상생활 기능저하는 기저 인지손상을 반영하는 교란변수이고 장시간 전신마취는 근거가 약해, '가장' 관련 깊은 단일 인자는 고령입니다.",
+    "exp": "후관절(facet joint)은 해당 분절과 바로 위 분절의 후지내측지(medial branch)로부터 이중 신경지배를 받으므로, 흉요추 이행부(T12-L1) 압통·타진통의 원인인 후관절·골절 부위 통증을 차단하려면 그보다 위 분절까지 포함한 medial branch를 표적해야 합니다. 따라서 T12-L1 후관절 통증에는 흉추 10, 11, 12번 후지내측지가 정답이며, 이는 흉추부 medial branch가 횡돌기를 상위에서 비스듬히 가로질러 분포하는 해부학적 주행을 반영한 임상 근거에 따른 것입니다.",
     "cat": "마취일반",
     "lvl": "기본"
   },
   {
-    "q": "26G whitacre needle로 pop은 분명히 났는데, 척수액 안나온다.",
+    "q": "치매있던 환자 수술 후 공격적이고 주사바늘을 뽑으려고 한다. 무슨 검사를 해야하며 진단은 무엇인가?",
     "options": [
-      "10초정도 더 기다려보고 베벨을 돌려본다",
-      "척수액이 안 나오니 기침을 해보라고 한다.",
-      "일단 마취제를 시험적으로 줘본다.",
-      "spinal needle을 cephalad 쪽으로 향해 다시 시행한다."
+      "short blessed test – 섬망",
+      "CAM – 치매의 악화",
+      "short blessed test – 치매의 악화",
+      "CAM – 섬망"
     ],
-    "answer": 0,
-    "exp": "26G Whitacre는 pencil-point 침으로 측면 개구부(orifice)가 침 끝보다 약간 근위부에 있고 구경이 작아 CSF 유출 속도가 느리므로, pop으로 경막 관통이 확인됐다면 10초가량 기다리는 것만으로 척수액이 차오를 수 있다. 또한 개구부가 신경근이나 경막 주름에 일부 가려져 있을 수 있어 베벨(개구부)을 90~180° 회전시키면 개구부가 지주막하강 내강으로 향하면서 유출이 확인되므로, 굳이 더 진입(5번, dural sleeve·신경 손상 위험)하거나 기침·시험 주입(부정확·전척수마취 위험) 같은 침습적·비특이적 조작 전 1·회전이 가장 안전하고 합리적인 1차 조치다.",
+    "answer": 3,
+    "exp": "급성 발병·증상 변동·부주의(inattention)·비조직적 사고를 핵심 진단축으로 평가하는 **CAM(Confusion Assessment Method)**이 적절한 검사이며, 수술 직후 갑작스럽게 나타난 공격성·초조·주사바늘 제거 시도는 기저 치매와 무관하게 급성·가역적 경과를 보이는 **섬망(delirium)**의 전형적 양상이다(정답 4번). Short Blessed Test는 만성·서서히 진행하는 인지저하를 선별하는 치매 도구로 급성 혼동 상태 감별에는 부적합하고, 치매 환자는 섬망 발생의 주요 위험인자일 뿐 증상의 급성 변동성은 치매 악화가 아닌 섬망을 시사한다(DSM-5 섬망 진단기준·CAM 알고리즘 Inouye et al., Ann Intern Med 1990).",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "다음 그래프를 보고 옳은 것은?",
+    "options": [
+      "alfentanil이 효능이 가장 높다.",
+      "alfentanil이 potency가 가장 크다.",
+      "remifentanil이 sufentanil보다 pontency가 크다.",
+      "감마는 각 약물에서 차이가 크다."
+    ],
+    "answer": 3,
+    "exp": "네 가지 약물(alfentanil·remifentanil·sufentanil·fentanyl)은 모두 μ-opioid 수용체 완전작용제(full agonist)이므로 용량을 충분히 올리면 도달하는 최대 진통 효과, 즉 efficacy(intrinsic activity)는 거의 동일하고 용량-반응곡선의 상한(plateau) 높이가 서로 비슷합니다 — 따라서 보기 5번이 옳습니다. 반면 곡선이 좌우로 이동하는 정도(EC50)로 결정되는 potency는 sufentanil ≫ remifentanil·fentanyl ≫ alfentanil 순으로 크게 차이 나므로(alfentanil이 potency가 가장 낮음), 보기 1·2·3은 틀리고 곡선의 기울기를 나타내는 Hill 계수(γ)도 약물 간 크게 다르지 않아 보기 4도 오답입니다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "수술실 밖에서 MAC으로 MRI 촬영하려고 한다. MRI 촬영 중 환자 감시에 대한 설명으로 옳은 것은?",
+    "options": [
+      "Pacemaker 가진 환자 촬영 가능하다.",
+      "응급으로 기관삽관 시 일반적인 기관삽관 도구 이용 가능하다.",
+      "MRI 자기장에 의해 산소포화도 심전도 그래프에 noise 생긴다.",
+      "환자감시장치는 MRI 영상의 질에 영향을 미치지 않는다."
+    ],
+    "answer": 2,
+    "exp": "MRI의 강한 정자기장(static field)과 RF(radiofrequency) 펄스 및 변화하는 경사자장(gradient)이 심전도 전극·케이블에 자기유도(자기수력학적 효과, magnetohydrodynamic effect로 대동맥 혈류에 의한 T파 증고 포함)와 RF 간섭을 일으켜 ECG·SpO2 파형에 noise를 유발하므로 정답은 3번이다. 나머지는 모두 틀리며 — pacemaker는 자기장 오작동·리드 가열 위험으로 원칙적 금기(MRI-conditional 기기만 조건부 가능), 응급 기관삽관 시 일반 후두경 등 강자성 금속 도구는 발사체(projectile) 위험으로 zone IV 반입 불가하여 MRI-safe 도구가 필요하고, 감시장치(특히 케이블)는 영상 artifact를 유발하며, 분비물·연하 곤란 및 항타액 목적의 glycopyrrolate 전투약은 MAC 중 기도 보호를 위해 오히려 권장될 수 있다.",
+    "cat": "약리",
+    "lvl": "기본"
+  },
+  {
+    "q": "승모판 질환을 앓고 있는 임산부가 LMWH으로 항응고치료를 받고 있다. 경막외 카테터를 제거하던 중 카",
+    "options": [
+      "2시간 후",
+      "6시간 후",
+      "12시간 후",
+      "24시간 후"
+    ],
+    "answer": 3,
+    "exp": "해설: 승모판 질환 임산부는 혈전색전증 위험으로 **치료용량(therapeutic dose) LMWH**를 투여받는데, LMWH는 항Xa 활성이 피크 후 반감기가 길어 치료용량에서는 신경축 차단·카테터 조작 시점까지 충분한 항응고 효과가 잔존하므로 척수경막외 혈종 예방을 위해 마지막 투여 후 **24시간** 경과를 권고한다 (ASRA 2018 신경축 항응고 가이드라인; 예방용량은 12시간). 따라서 카테터 제거는 마지막 치료용량 LMWH 투여 24시간 이후에 시행해야 하며, 제거 후 다음 LMWH 재투여는 최소 4시간 이상 간격을 두어야 한다.",
+    "cat": "부위마취",
+    "lvl": "기본"
+  },
+  {
+    "q": "70세 70kg 남자가 고관절수술 중에 적혈구 용적률이 22%이다. 70ml/kg이고 pRBC의 용적률을 60%라고 할",
+    "options": [
+      "450",
+      "550",
+      "650",
+      "750"
+    ],
+    "answer": 2,
+    "exp": "해설: 총 혈액량은 70 kg × 70 mL/kg = 4,900 mL이며, 목표 적혈구용적률(Hct) 30%로 올리기 위해 필요한 pRBC 양은 [혈액량 × (목표Hct − 현재Hct)] ÷ pRBC Hct = 4,900 × (0.30 − 0.22) ÷ 0.60 ≈ 653 mL로 계산되어 정답은 ③ 650이다. 이는 수혈 시 환자의 적혈구 질량 증가분이 투여한 pRBC의 적혈구 질량과 같다는 질량보존 원리에 근거하며, 농축적혈구의 Hct(약 55~70%)가 전혈보다 높아 적은 용량으로도 효율적인 산소운반능 회복이 가능함을 반영한다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "위궤양 있는 환자 무릎 관절염 통증 무슨약?",
+    "options": [
+      "aspirin",
+      "naproxen",
+      "celecoxib",
+      "ibuprofen"
+    ],
+    "answer": 2,
+    "exp": "Celecoxib은 선택적 COX-2 억제제로, 위점막 보호 프로스타글란딘(PGE2·PGI2)을 생성하는 COX-1을 거의 억제하지 않아 비선택적 NSAID(aspirin·naproxen·ibuprofen)나 meloxicam(준선택적)보다 소화성 궤양 악화·출혈 위험이 유의하게 낮습니다(ACG NSAID 가이드라인, CONDOR trial Lancet 2010). 따라서 기존 위궤양 병력이 있는 골관절염 환자의 통증 조절에는 위장관 안전성이 가장 우수한 celecoxib이 적절하며, 필요 시 PPI 병용으로 추가 보호가 권장됩니다.",
     "cat": "마취일반",
     "lvl": "기본"
   }
