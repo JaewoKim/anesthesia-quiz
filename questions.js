@@ -1,188 +1,5 @@
 const QUESTIONS = [
   {
-    "q": "50cm 3.2kg 생후2개월 남아 전신마취 하에 서혜부 탈장 수술 예정이다. 32주 출생..당시 일주일간 기계호흡 치료를 받았으나 현재 청색증이나 호흡곤란 없다. Hb 10.9, 다음 중 옳은 것은?",
-    "options": [
-      "당일 입퇴원이 가능하다.",
-      "모유수유 시 4시간 금식한다.",
-      "통증 조절은 필요하지 않다.",
-      "마취직후 수혈을 한다."
-    ],
-    "answer": 1,
-    "exp": "정답 ②: ASA 금식 지침상 모유는 위 배출이 분유·우유(6시간)보다 빠르지만 맑은 액체(2시간)보다는 느려 흡인 위험을 줄이기 위해 4시간 금식이 권고되며, 이 영아는 청색증·호흡곤란이 없어 추가 제한이 필요 없다. 나머지는 모두 틀린데, ①·③·⑤는 교정연령 60주 미만(현재 약 40주) 미숙아 출신이라 수술 후 무호흡 위험으로 당일 퇴원 불가·입원 모니터링이 필요하고 통증 조절도 반드시 해야 하며 미숙아망막병증(ROP) 악화를 막기 위해 고농도 산소를 피해야 하고, ④의 Hb 10.9 g/dL은 생후 2개월 생리적 빈혈 범위 내 정상치로 수혈 적응증이 아니다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "Spinal anesthesia로 인한 고위 차단 후 발생하는 apnea의 원인으로 가장 연관성 이 높은 것은?",
-    "options": [
-      "Intercostal muscle paralysis",
-      "Abdominal muscle paralysis",
-      "Phrenic nerve palsy",
-      "Brainstem hypoperfusion"
-    ],
-    "answer": 3,
-    "exp": "Diaphragmatic paralysis in the absence of total spinal anesthesia does not occur with neuraxial block, since even a sensory block as high as C3 will only produce a motor block at T1 through T",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "흡입마취제의 특성 옳은 것은?",
-    "options": [
-      "등적이완 시간을 연장시키지 않는다.",
-      "심근보호에 가장 중요한것은 protein kinase A이다.",
-      "ATP Sensitive K 채널이 허혈성 심근보호에 중요하다",
-      "SA node의 자동능을 촉진한다."
-    ],
-    "answer": 2,
-    "exp": "흡입마취제(특히 sevoflurane·isoflurane)의 심근보호는 anesthetic preconditioning 기전으로, mitochondrial·sarcolemmal ATP-sensitive K⁺ 채널(mitoK_ATP)의 개방이 핵심이며 이는 PKC(protein kinase C, PKA 아님) 활성화와 reactive oxygen species 신호를 거쳐 미토콘드리아 막전위를 안정화하고 허혈-재관류 손상을 줄인다(보기 2·3 감별 포인트). 따라서 CABG·AVR 등 심장수술에서 sevoflurane은 troponin I 분비를 오히려 감소시키고(보기 5 오류), 등척성 이완 시간을 연장하며 SA node 자동능은 억제하므로(보기 1·4 오류) 정답은 3번이다.",
-    "cat": "약리",
-    "lvl": "기본"
-  },
-  {
-    "q": "재태 주수 35주의 임산부가 임신 30주부터 악화된 운동시 호흡곤란으로 내원하였다. 환자는 이전에 특이 병력이 없었으나 경흉부 심초음파 검사에서 폐동맥 수축기압 96 mmHg의 심한 폐동맥고혈압 및 우심실의 심한 확장 소견을 보였다. 산모의 상태를 고려하 여 익일 제왕절개 수술을 시행하기로 결정하였다. 이 산모의 제왕절개 수술을 위한 마취 방법으로 가장 적절한 것은?",
-    "options": [
-      "Single-shot spinal anesthesia",
-      "Slowly titrated epidural anesthesia",
-      "General anesthesia",
-      "General anesthesia with pulmonary artery catheter monitoring"
-    ],
-    "answer": 1,
-    "exp": "폐동맥고혈압 산모의 제왕절개수술을 위한 마취 방법으로는 Slowly titrated epidural or combined spinal-epidural anesthesia가 가장 선호된다.",
-    "cat": "호흡/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "노인 환자에서 수술 후 섬망의 위험인자와 관리에 대한 내용으로 다음 중 옳은 것은?",
-    "options": [
-      "우울증과는 상관이 없다.",
-      "청력이 저하되어 보청기를 사용하던 환자의 경우, 수술 후 조용한 환경을 만들기 위해",
-      "유치 도뇨관은 가능한 빨리 제거한다.",
-      "통증 조절을 위한 일차 약제로 meperidine을 사용한다."
-    ],
-    "answer": 2,
-    "exp": "㉮ 우울증은 섬망의 위험 인자 중 하나이다. ㉯ 시력, 청력보조는 섬망의 예방과 치료를 위한 비약물적 중재에 해당한다. ㉰ 유치 도뇨관을 가능한 빨리 제거하여 요로감염을 방지하고 환자의 활동을 촉진한다. ㉱ Meperidine은 Beer’s criteria에 포함되는 약제로, 노인 환자의 통증 조절에 추천되지 않는다. ㉲ 항정신병약물이 섬망의 기간과 정도를 줄여주는지에 대한 연구들은 일관되지 않은 결 과를 보여주고 있으며, 예방적 사용은 권고되지 않고 있다. 치매 환자에서 항정신병약물 을 사용하였을 때 사망률이 증가하는 것으로 알려져 있다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "목표농도조절주입(target controlled infusion, TCI)에 대한 적절한 설명을 고르시오.",
-    "options": [
-      "사용자가 설정한 목표농도를 유지하기 위하여 투여속도를 일정하게 유지하는 투여방",
-      "일정 시간 간격에 따라 사용자가 주입속도를 변경해주어야 목표농도에 도달할 수 있다.",
-      "특히 미국에서 TCI를 진료 현장에서 주로 활용하고 있다.",
-      "효과처농도 TCI를 시행하기 위해서는 약동학 모수 이외에 약력학 모수 중에서 약물의"
-    ],
-    "answer": 3,
-    "exp": "㉮㉯ 투여속도가 계속 변화되는 variable rate infusion 방법이다. ㉰ 미국 FDA에서는 진료영역에서 TCI의 사용을 승인하지 않아서, 연구목적으로만 사용되 고 있다. ㉱ 효과처농도 TCI를 시행하기 위해서는 약동학 모수 이외에 약력학 모수 중에서 약물의 혈액뇌평형속도상수(ke0)가 추가로 필요하다. ㉲ 모형이 다르면 투여량도 달라진다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "다음 그래프 및 이에 관련된 설명으로 옳은 것을 고르시오.",
-    "options": [
-      "Differential block으로 axon myelination, diameter, function의 차이에 의해 척추",
-      "(a) Pin prick (b) Temperature (c) Light touch",
-      "C fiber는 myelinated fiber로 diameter가 가장 작고, pain, temperature,",
-      "Motor neuron의 경우 local anesthetics에 sensitivity가 높아 차단이 빠르게 나타나"
-    ],
-    "answer": 0,
-    "exp": "㉯ (a) Temperature (b) Pin prick (c) Light touch ㉰ C fiber는 unmyelinated fiber로 diameter가 가장 작고, pain, temperature, postganglionic sympathetic function에 관여하며, local anesthetics에 높은 감수성을 나 타낸다. ㉱ Motor neuron의 경우 local anesthetics에 sensitivity가 낮아 차단이 느리게 나타나다. ㉲ Sympathetic block level이 sensory block level보다 먼저 차단된다. 차단되는 dermatome의 높이가 더 높다.",
-    "cat": "마취일반",
-    "lvl": "기본",
-    "img": "images/q_007_p38.jpg"
-  },
-  {
-    "q": "기저 질환이 없는 39세 여자 환자가 수술실에 입실하여 심계항진을 호소하였다. 혈 압 100/70mmHg, 심박수 160bpm으로 측정되었다. 입실 후 시행한 심전도에서 다음과 같 은 소견을 보였다. 우선적으로 시행해 볼 수 있는 처치로 가장 적절한 것은?",
-    "options": [
-      "Cardioversion 100-120J (biphasic waveform)",
-      "Cardioversion 200J (monophasic waveform)",
-      "Adenosine 6mg 정주",
-      "Lidocaine 1mg/kg 정주"
-    ],
-    "answer": 2,
-    "exp": "해설: 좁은 QRS·규칙적 160회/분 빈맥은 방실결절 회귀성 빈맥(AVNRT) 등 발작성 상심실성빈맥(PSVT)에 합당하며, 혈압이 유지된 안정 환자이므로 전기 심율동전환보다 약물 치료가 우선되고 미주신경 자극이 실패하면 adenosine이 1차 약제이다(2020 ACLS/SVT 가이드라인). Adenosine은 방실결절 전도를 일시 차단해 회귀회로를 끊어 동율동으로 전환시키며, verapamil은 저혈압·심부전 위험이 있고 lidocaine은 심실성 부정맥용이라 부적절하다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "52세 남자가 우측 상완부 절단 수술 후 발생한 우측 손과 손목의 통증을 주소로 내 원하였다. 통증은 수술 후 약 2주가 경과한 시점부터 시작되었고 저리고, 불로 지지는 것처 럼 화끈거리고 칼로 찌르는 양상의 통증이라고 한다. 수술 직후 환자는 본인의 우측 팔꿈 치, 전완, 손이 모두 그대로 있는 느낌이었는데, 시간이 점차 경과하면서 절단 이하 부위가 짧아지면서 손이 점점 절단면에 가까워지는 것처럼 느껴졌으며, 현재는 우측 손목과 손이 절단면 바로 아래에 붙어 있는 느낌이라고 한다. 이처럼 절단 수술 이후 존재하지 않는 손 과 손목이 절단면 바로 아래 붙어 있는 것으로 느끼는 현상을 무엇이라고 하는가?",
-    "options": [
-      "moving",
-      "shortening",
-      "telescoping",
-      "omission"
-    ],
-    "answer": 2,
-    "exp": "환지통 환자에서 telescoping 현상은 전체 환자의 1/3에서 나타나는 것으로 보고된 다. 수술 후 점차적으로 환지 부위가 작아지거나 단축되는 것으로 느끼며 나중에는 절단된 손이나 발이 절단면 바로 아래 달려 있는 듯한 느낌이나 손가락 또는 발가락이 절단면 아 래에 달려 있는 느낌을 호소하기도 한다.",
-    "cat": "마취일반",
-    "lvl": "기본"
-  },
-  {
-    "q": "대장암 수술을 받은 50세 남자환자가 문합 부위 누출에 의한 복막염이 발생하여 응 급 개복술후 중환자실로 이송한 후 호흡 보조를 위해 인공호흡기 치료를 시작하였다. 기계 환기를 시행하던 중 그래픽 모니터링에서 점선내와 같은 압력-기류 곡선이 관찰되었다. 다 음 중 적절한 처치는?",
-    "options": [
-      "흡기시간을 늘려준다.",
-      "흡기유량을 증가시킨다.",
-      "일회호흡량을 감소시킨다.",
-      "호기말양압을 적용한다."
-    ],
-    "answer": 1,
-    "exp": "유량부조화가 발생한 경우로 기계환기기의 유양이 환자의 흡기 유량을 충족시키지 못하는 경우에 발생한다. 파형에서는 환자 기도압의 증가가 오목하게 나타난다.",
-    "cat": "호흡/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "번 사이로 척추마취를 시행하였고, 마취높이는 흉추 6 번까지 였다. 수술을 위해 소독을 하던 중 갑자기 극심한 서맥과 함께 혈압이 60/40 mmHg 가 되었다. 응급으로 시행한 경흉부 심초음파 검사에서 다음과 같은 소견을 얻었다. 진단은?",
-    "options": [
-      "Systolic anterior motion (SAM)",
-      "Severe vasovagal reflex",
-      "Acute pulmonary embolism",
-      "Sick sinus syndrome."
-    ],
-    "answer": 2,
-    "exp": "㉮ a 2-D Doppler image by transesophageal echocardiography showing SAM, septal-mitral contact, and an interleaflet gap (shown by asterisk) between the anterior and posterior mitral valve leaflets. b Transesophageal 2-D color flow Doppler showing turbulence across the LVOT and a posteriorly directed jet of mitral regurgitation. ㉯ An echocardiogram of the left parasternal long axis view demonstrating the severely prolapsed posterior leaflet of the mitral valve (arrow). A 2-dimensional Doppler cardiogram showing severe mitral regurgitation and an enlarged left atrium. ㉰ Echocardiography shows D-shaped left ventricle (arrowheads), McConnell’s sign (arrow) ㉱ Left ventricular noncompaction cardiomyopathy (LVNC) is significantly associated with sick sinus syndrome and may require event monitoring. LVNC can be missed on echocardiography and may require cardiac magnetic resonance imaging for diagnosis. ㉲ Severe hypovolemic shock. Kissing walls of left ventricle on parasternal short axis view is shown. The left ventricle is obliterated during systole. Hypovolemic shock is characterized by a decrease in stressed volume. Accordingly, the cardiac volumes and pressures are usually low. This is reflected by small size of cardiac cavities, sometimes associated with virtual left end systolic volume or “kissing ventricles”. The inferior and superior vena cava sizes are usually small and disclose significant respiratory variations. Left heart filling pressures are low: low mitral E wave, low E/E’ ratio. Aortic velocity time integral (VTI) and cardiac output are typically low.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "65세 여자환자가 건강검진에서 발견된 조기위암으로 복강경 위절제술을 받기위해 입원하였다. 환자는 고혈압으로 안지오텐신수용체 차단제와 칼슘통로 차단제를 복용 중이 었으며, 역류성식도염으로 양성자펌프억제제를 복용 중이었다. 또한 갑상선기능저하증으로 레보티록신나트륨수화물을 복용 중이었으며 우울증으로 선택적 세로토닌 재흡수 억제제를 복용 중이었다. 이 환자에서 수술 당일 복용 중단이 권장되는 약제는?",
-    "options": [
-      "안지오텐신수용체 차단제",
-      "칼슘통로 차단제",
-      "양성자펌프 억제제",
-      "레보티록신나트륨수화물"
-    ],
-    "answer": 0,
-    "exp": "고혈압 약제 중 안지오텐신전환효소 억제제 (Angiotensin-converting-enzyme inhibitor)와 안지오텐신수용체 차단제 (angiotensin receptor blocker)는 수술 전 24시간 이내 복용하는 경우 수술 중 저혈압과 수술 후 심근손상의 위험 증가와 연관된다고 알려져 있다. 따라서 이들 약제는 수술 24시간 전부터 중단하는 것이 권장된다. 이외 고혈압 약제 들, 양성자펌프 억제제, 갑상선호르몬제, 선택적 세로토닌 재흡수 억제제은 수술 당일까지 복용 지속이 권장된다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "쇄골 밑 접근법 팔신경얼기 차단(infraclavicular brachial plexus block) 은 앞 팔(forearm)을 수술하는 경우 사용할 수 있는 부위마취 수기이다. 쇄골 밑 접근법의 특성을 설명한 것 중 옳은 것을 고르시오.",
-    "options": [
-      "목표 구조물들이 다른 팔신경얼기 차단법에 비해 상대적으로 얕은 곳(superficial)에 위",
-      "초음파의 도움 없이도 쉽게 할 수 있는 팔신경얼기 차단법이다.",
-      "팔을 외전(abduction) 시키는 것이 시술이 더 용이하다.",
-      "카테터(catheter)의 거치가 다른 팔신경얼기 차단법과 비교하여 어렵다."
-    ],
-    "answer": 2,
-    "exp": "및",
-    "cat": "신경/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "76세 환자가 위암을 진단받고 위 전 절제술이 예정되었다. 환자는 6개월 전 심근경 색으로 쓰러진 후 관상동맥 협착증을 진단받고 스탠트 시술을 받았다. 현재 aspirin과 clopidogrel을 복용 중이다. 수술 전 처치 내용으로 옳은 것은 무엇인가?",
-    "options": [
-      "비가역적 혈소판 억제 효과를 고려하여 aspirin은 7일 전 중단이 원칙이다.",
-      "Clopidogrel은 수술 5일 전 중단하고 aspirin은 복용을 유지한다.",
-      "수술 5일 전 aspirin과 clopidogrel을 모두 중단했다가 수술 후 복용을 시작한다.",
-      "수술 7일 전부터 aspirin과 clopidogrel은 계속 중단한다."
-    ],
-    "answer": 1,
-    "exp": "Whenever possible, surgical procedures should be performed following critical time windows (i.e., 30 days after BMS, or",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
     "q": "Glycocalyx 의 역할이 추가된 revised Starling equation 에 대해 설명한 것 중 옳은 것을 고르시오.",
     "options": [
       "Albumin을 외부에서 투여하여 colloid oncotic pressure를 높이면 pulmonary edema를",
@@ -196,133 +13,315 @@ const QUESTIONS = [
     "lvl": "기본"
   },
   {
-    "q": "38세 남자 환자가 신장 기증을 위한 복강경하 신장 적출술을 받고 있던 중 혈압 80/50mmHg, 심박수 75회/분으로 확인되었다. 적절한 수액공급을 시행한 이후에도 상기 활력 징후가 지속되었을 때 1차적으로 사용할 수 있는 승압제는?",
+    "q": "경부 척추주위 신경차단술(cervical paravertebral nerve block) 시 입자형 스테로이드(particulate steroid)를 사용하면 안 되는 이유로 가장 적절한 것은?",
     "options": [
-      "ephedrine",
-      "phenylephrine",
-      "norepinephrine",
-      "epinephrine"
-    ],
-    "answer": 0,
-    "exp": "If hypotension occurs after adequate fluid replacement, then dopamine and ephedrine are preferable to direct-acting vasopressors to minimize vasoconstriction in the graft. th",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "장기이식을 위한 장기 적출 후, 장기 보존액에서 일반적으로 허용되는 냉 허혈 시간 (cold ischemia time)은 신장-A 시간, 간-B 시간, 심장-C 시간, 폐-D 시간이다. A, B, C,",
-    "options": [
-      "는?",
-      "36, 24, 18, 12",
-      "24, 18, 12, 6",
-      "24, 12, 6, 4"
-    ],
-    "answer": 3,
-    "exp": "Generally accepted cold ischemia times during static cold preservation are 24 hours for the kidney, 12 hours for the liver, 6 hours for the heart, and 4 hours for the lung.",
-    "cat": "호흡/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "키 170 cm, 체중 116 kg, BMI 40 kg/m2 인 45 세 남자 환자가 복강경 담낭절제술을 받을 예정이다. 환자는 15 년 전부터 당뇨를 앓고 있으나 혈당은 잘 조절되고 있고, 10 년전부터 고혈압으로 경구약을 복용하고 있으며 혈압은 잘 조절되고 있다. 평소 수면 시 코골이가 심하다고 하여 STOP-BANG 질문지로 평가한 결과 8 개 항목 중에서 5 개에 “예”라고 답하였다. 이 환자에서 당일 수술이 적합하지 않을 것으로 판단할 때 그 이유로 가장 타당한 것은?",
-    "options": [
-      "복강경 수술",
-      "병적 비만 자체",
-      "만성 당뇨",
-      "만성 고혈압"
-    ],
-    "answer": 3,
-    "exp": "STOP-BANG 5/8(고위험 OSA)에 병적 비만이 동반된 환자는 기도 허탈성·아편유사제 감수성이 높아 마취·진정 후 무호흡과 저산소증 등 호흡기 합병증이 지연되어 발생할 위험이 크다(ASA/SAMBA OSA 주산기 가이드라인). 따라서 당일 퇴원형 수술에서는 충분한 술후 호흡 감시 시간을 확보할 수 없으므로, 다른 동반질환(당뇨·고혈압)이 잘 조절되더라도 OSA가 당일 수술 부적합의 가장 타당한 사유가 된다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "isoflurane, sevoflurane, desflurane 중에서 관상동맥 이완 가장 많이 하는 것과 적게 하는 것은?",
-    "options": [
-      "sevoflurane - isoflurane",
-      "sevoflurane - desflurane",
-      "Isoflurane – sevoflurane",
-      "isoflurane - desflurane"
-    ],
-    "answer": 2,
-    "exp": "해설: Isoflurane은 흡입마취제 중 관상동맥 미세혈관(소동맥)을 직접 가장 강하게 확장시켜 과거 협착부 인접 정상 혈관을 확장해 허혈 부위로 갈 혈류를 빼앗는 'coronary steal' 우려가 제기된 약제이며, sevoflurane은 관상동맥 확장 작용이 가장 약하다(Hartman et al., *Anesthesiology* 1992; Miller's Anesthesia, volatile agents의 coronary vasodilation 비교). 따라서 관상동맥 이완이 가장 큰 것은 isoflurane, 가장 적은 것은 sevoflurane으로 정답은 3번이다.",
-    "cat": "순환/생리",
-    "lvl": "기본"
-  },
-  {
-    "q": "흡입마취제 약동학의 임상적용에 대한 설명으로 옳은 것은?",
-    "options": [
-      "신속한 마취유도를 위해 초기에 고농도 마취제를 흡입시키는 과압법은 추천되지 않는다.",
-      "마취유도 초기 흡입마취제 중 많은 양이 혈액으로 섭취된다.",
-      "임신말기 산모는 마취유도 속도가 느리다.",
-      "폐기종 환자는 마취유도 속도가 빠르다."
+      "요골동맥의 변이로 인한 출혈 위험",
+      "변이된 척추동맥(vertebral artery) 해부로 인한 색전성 뇌혈관·척수 합병증 위험",
+      "횡격막 신경 마비를 악화시키기 때문",
+      "호너증후군 발생률을 높이기 때문"
     ],
     "answer": 1,
-    "exp": "㉮ 신속한 마취유도를 위해 과압법은 흔히 사용된다. ㉰ 산모는 FRC 감소로 인해 마취유도 속도가 빠르다. ㉱ 폐기종 환자는 FRC 증가로 인해 마취유도 속도가 느리다. ㉲ 심부전 환자는 심박출량의 감소로 인해 마취발현 속도가 빠르다.",
-    "cat": "약리",
+    "exp": "이 부위에서는 척추동맥의 해부학적 변이 가능성이 있어 입자형 스테로이드 주입 시 색전성 뇌혈관 및 척수 합병증이 발생할 수 있다. 따라서 경부 척추주위 신경차단술에는 입자형 스테로이드를 사용해서는 안 된다.",
+    "cat": "신경/생리",
     "lvl": "기본"
   },
   {
-    "q": "다음은 임신으로 인한 생리학적 변화를 설명한 것이다. 올바르게 설명한 것은?",
+    "q": "80세의 남환, 폐암으로 방사선치료 후 호흡기내과 외래추적관찰 중이었으며 약 3일 전부터 시작된 극심한 등의 통증으로 통증클리닉으로 의뢰되어 내원하였다. 방사통이 동반 되지는 않았으며, 통증 주변에서 심한 압통이 있었다. 흉추 MRI사진은 다음과 같다. T6,7,8에서 후내측지 블록 시행 후 일시적인 통증 완화의 효과는 있었으나, 오래가지 않았",
     "options": [
-      "횡격막의 이동으로 인해 일회호흡량은 약간 감소하지만 분당호흡수는 증가한다.",
-      "호르몬의 영향으로 말초 혈관 저항이 증가하므로 임신 말기에는 혈압이 상승한다.",
-      "혈류량이 많아짐에 따라 심박출량의 증가로 흡입마취제의 필요량이 증가한다.",
-      "혈액량의 증가로 혈액이 희석되어 빈혈이 나타나며 응고인자들이 감소한다."
+      "다음 중 가장 고려할 만한 치료 방법을 고르시오.",
+      "경피적 추체성형술 (percutaneous vertebroplasty)",
+      "복강신경얼기블록 (Celiac plexus block)",
+      "흉부교감신경절블록 (Thoracic sympathetic ganglion block)"
     ],
-    "answer": 3,
-    "exp": "일회호흡량 분당호흡수 모두 증가한다. 전신혈관저항의 감소되므로 혈압이 상승하지 않는다. 민감도 감소로 흡입마취제의 필요량이 감소 혈액이 희석되어도 응고인자가 감소하지 않는다.",
-    "cat": "산과마취",
+    "answer": 1,
+    "exp": "경피적 추체성형술의 적응증 ㉮ 골다공증에 의한 추체압박골절 (vertebral compression fracture, VCF) ㉯ 골전이에 의한 골용해성 혹은 골모세포성 추체골절 (osteolytic or osteoblastic verebral fracture) ㉰ 추체 자체의 다발골수종 (multiple myeloma) 등 다양한 추체 병변",
+    "cat": "호흡/생리",
     "lvl": "기본"
   },
   {
-    "q": "태아와 산모 간의 혈장약물농도(F/M ratio)가 제일 작은 약물은?",
+    "q": "22 세 남자가 두통과 어지럼증 및 간헐적인 구역 구토를 주소로 내원하였다. 물건이 둘로 보이는 증상도 생기기 시작하여 확인해 보니 parietal mass 가 있어 open brain biopsy 를 하기로 결정하였다. 다음 중 뇌압(intracranial pressure)을 더 높일 수 있는 정맥마취제는 무엇인가?",
     "options": [
+      "Thiopental",
+      "Dexmedetomidine",
       "Ketamine",
-      "Ephedrine",
-      "Bupivacaine",
-      "Rocuronium"
+      "Propofol"
     ],
-    "answer": 3,
-    "exp": "해설: Rocuronium은 4기 암모늄(quaternary ammonium) 구조로 생리적 pH에서 완전히 이온화되어 있고 분자량이 크며 지용성이 낮아, 단순확산(simple diffusion)에 의존하는 태반 통과가 가장 제한적이라 F/M ratio가 약 0.1~0.2로 보기 중 가장 작다. 반면 ketamine·국소마취제(bupivacaine)·opioid(sufentanil)·ephedrine은 모두 비이온화 지용성이 높아 태반을 쉽게 통과하므로 F/M ratio가 상대적으로 크다(Miller's Anesthesia, placental drug transfer 원칙).",
+    "answer": 2,
+    "exp": "㉰ Ketamine 은 intracranial pressure, cerebral metabolism, cerebral blood flow 를 증가시킨다. Intracranial mass 가 있거나 intracranial pressure 가 있는 경우 ketamine 은 상대적 금기이다. 문제에서 환자는 parietal mass 가 있고, intracranial pressure 증가를 시사하는 증상 (두통, 어지럼증, 구역 구토, 복시 등)을 보이고 있어 ICP 를 증가시키는 ketamine 은 금기이다. 다른 정맥마취제는 intracranial pressure를 감소시킨다.",
     "cat": "약리",
     "lvl": "기본"
   },
   {
-    "q": "Laparoscopic nephrectomy 진행중 PIP 30이상으로 오르고, SpO2 95%로 감소, EtCO2 46mmHg로상승, ABGA 해보니까 pH 7.24, PaCO2 61, PaO2 72, HCO3 24, SaO2 94%, CXR 상 right side capnothorax 소견",
+    "q": "다음은 일측폐 환기중 발생할 수 있는 저산소혈증의 기전과 대처 방법에 대한 내용 이다. 맞는 것은?",
     "options": [
-      "긴장성 기흉 막기 위해 흉관 삽입한다.",
-      "C line 잡고 CVP를 모니터링한다.",
-      "대량수혈 준비한다.",
-      "PEEP을 적용한다."
+      "정상 심폐기능을 가진 환자는 일측폐 환기중 션트양이 증가하지 않는다.",
+      "저산소성 폐혈관 수축(hypoxic pulmonary vasoconstriction)은 일측폐 환기가 시작",
+      "일측폐 환기를 종료하여 양측폐에 환기를 시작하여도 일정시간동안 저산소성 폐혈관",
+      "흉강경하 폐수술(Video assisted thoracic surgery)시에 발생하는 저산소 혈증은"
     ],
-    "answer": 3,
-    "exp": "복강경 수술 중 capnothorax는 insufflation된 CO₂가 횡격막의 선천적 결손부나 후복막을 따라 흉막강으로 유입되어 발생하며, CO₂는 공기 기흉과 달리 혈중 용해도가 높아 빠르게 흡수되므로 대부분 자연 소실되고 혈역학적으로 안정적이어서(긴장성 X) 흉관 삽입·대량수혈·CVP 모니터링이 불필요하다(보기 1·2·3 오답). 따라서 PEEP을 적용해 흉막강 내압보다 폐포압을 높여 허탈된 폐를 재팽창시키고 CO₂ 누출을 tamponade하는 것이 치료이며, 기복 해제 후 신속히 회복되므로 장기간 인공호흡기 치료는 예상되지 않는다(보기 5 오답).",
+    "answer": 2,
+    "exp": "㉮ 일측폐 환기 중 저산소증의 주된 원인은 증가된 션트이다. 이론적으로 환기가 이루어지 지 않는 폐는 모두 션트를 만들게 되며, 이 션트양을 줄이는 것이 일측폐 환기중 산소 공 급에 중요하다. 이를 위하여 환기가 이루어지는 쪽을 아래로 하는 측와위를 취하는 것이 중력에 의해 션트양을 줄일 수 있으며, hypoxic pulmonary vasoconstriction이 중요한 역할을 한다. ㉯ Hypoxic pulmonary vasoconstriction (HPV)은 일측폐 환기가 시작되는 시점부터 빠 르게 발생하여 약 30분경 일정수준에 도달하여 유지하다가 이후 천천히 증가하여 2시간 경 최고점에 도달한다. ㉰ 일측폐 환기 종료후 HPV는 서서히 감소하여 수시간동안 폐동맥저항이 증가되어 유지된 다. 이런 이유로 양측 폐를 번갈아 일측폐 환기를 시행한다면 두번째 일측폐 환기 시 저산 소증이 더 잘 발생하게 된다. ㉱ VATs는 좁은 공간에서 수술 도구를 조작해야 하기 때문에 낮은 압력의 CPAP에도 수술 이 방해받는 경우가 흔하다. VATs동안 저산소혈증이 발생하면, 폐포모집술(alveolar recruitment), PEEP on ventilation lung, bronchoscope을 이용하여 수술부위가 아닌 다른 폐엽에 산소를 공급하는 방법 등이 유용하게 사용될 수 있다. ㉲ 일측폐 환기는 차단된 폐에 ischemia-reperfusion injury를 유발하며, 환기폐에는 인 공호흡기 관련 손상을 유발할 수 있다. 인공호흡기 사용시 발생하는 무기폐는 소량 발생하 더라도 주변 폐조직의 손상을 가속시키며, 일정량 이상 증가하면 흡기 압력에 영향을 줄 뿐 아니라 산소 공급에도 나쁜 영향을 미친다. 적절한 폐포모집술과 PEEP은 수술중 무기 폐 발생을 줄여주며, 폐와 폐포에 strain을 감소시켜 폐손상을 줄일 수 있다.",
     "cat": "호흡/생리",
     "lvl": "기본"
   },
   {
-    "q": "특이 병력 없던 55 세 남자 환자가 교통사고로 인한 다발성 외상으로 응급실에 내원하였다. 내원 후 얼마 지나지 않아 심정지가 발생하였다. 즉시 심폐소생술을 시작하였고 기관내삽관에 성공했다. 그러나 정맥로(intravenous access) 및 골강내 주사로(intraosseous access) 확보에 연이어 실패하여 기관내관을 통해 약물을 투여하기로 하였다. 다음 중 기관내 투여를 할 수 없는 약물을 무엇인가?",
+    "q": "마취기에 사용되는 폐가스 배출 시스템(WAGD, waste anesthetic gas disposal)에 관한 설명으로 옳은 것은?",
     "options": [
-      "에피네프린 (epinephrine)",
-      "바소프레신 (vasopressin)",
-      "리도카인 (lidocaine)",
-      "중탄산나트륨 (sodium bicarbonate)"
+      "WAGD 배출구와 배관은 일반적으로 검은색이다",
+      "과도한 흡인(suction)은 부적절한 환자 환기를 초래할 수 있다",
+      "흡인이 부족하면 환자에게 고탄산혈증이 직접 발생한다",
+      "현대 마취기에는 별도의 WAGD 진공 시스템이 필요하지 않다"
     ],
-    "answer": 3,
-    "exp": "정맥 또는 골강내 약물 투여가 불가능한 경우, 기관내 투여가 대체 경로가 될 수 있으며 에피네프린(epinephrine), 바소프레신(vasopressin), 리도카인(lidocaine), 아트로핀(atropine)의 기관내 투여가 가능하다. 중탄산나트륨(sodium bicarbonate)는 기관내 투여할 수 없다. 중탄산염은 점막과 폐포에 손상을 줄 수 있어 기관내관튜브를 이용한 투여는 금기이다.",
-    "cat": "약리",
+    "answer": 1,
+    "exp": "WAGD 흡인 조절기의 float 지표가 지정 범위를 벗어나 과도한 흡인이 걸리면 환자 환기가 부적절해질 수 있고, 흡인이 부족하면 폐가스가 제대로 배출되지 못한다. WAGD 배출구와 배관은 보통 라벤더(연보라)색이며 현대 마취기는 전용 WAGD 진공 시스템을 요구한다.",
+    "cat": "호흡/생리",
     "lvl": "기본"
   },
   {
-    "q": "49세 남자 환자가 교통사고로 인한 외상성 경막외 출혈로 전신마취하에 개두술을 받고 있다. 모든 환자 감시장치 소견이 정상이었으나 수술 중 맥박산소포화도가 98%에서 92%로 감소하였고 심박수가 90회/분에서 110회/분으로 증가하였다. 흡입산소농도 50%에 서 시행한 동맥혈 검사는 pH 7.211, PaCO 49mmHg, PaO 58mmHg, BE -1.01 mmol/L 2 2 였다. 산소포화도 저하의 원인을 감별하기 위해 시행한 폐 초음파는 다음과 같다. 가장 의 심되는 원인은? ( M mode )",
+    "q": "목과 어깨 통증을 호소하는 경추부 디스크가 의심되는 환자가 외래를 방문하였다. 환자는 전완의 lat. aspect 부위와 biceps, brachioradialis 의 근력약화와 기능저하를 호 소하며 엄지와 둘째 손가락의 감각저하 증상을 보인다. 다음 중 가장 의심되는 병변 신경 근은?",
     "options": [
-      "폐공기색전증",
-      "흡인성 폐렴",
-      "폐부종",
-      "기흉"
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "answer": 2,
+    "exp": "표",
+    "cat": "신경/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "다음 중 심부정맥혈전증 가능성이 높은 환자는?",
+    "options": [
+      "교통사고로 갈비뼈와 고관절골절 23세 여자",
+      "뇌졸중으로 편마비인 78세남자",
+      "등산 중 사고로 c4 spinal cord injury인 54세 남자",
+      "간이식?간절제 받은 ...여자 4대였는데 기억이...;;"
+    ],
+    "answer": 2,
+    "exp": "급성 척수손상(특히 C4 같은 경추부 완전손상)은 사지마비로 인한 완전 부동(immobilization)과 골격근 펌프 소실, 그리고 손상 초기 교감신경 차단에 따른 정맥혈 정체가 겹쳐 Virchow 3요소 중 정맥울혈이 극대화되므로, 예방요법 없이는 DVT 발생률이 60~100%에 달해 보기 중 가장 높습니다. 고관절·골반 골절(1번)이나 뇌졸중 편마비(2번)도 위험인자이지만, 완전 사지마비의 부동 정도와 자율신경 기능장애 측면에서 급성 척수손상이 정맥혈전색전증 위험이 가장 큰 군으로 분류됩니다(ACCP/Spinal cord injury 혈전예방 지침 기준).",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "비탈분극성 차단으로부터의 회복 적절성을 평가할 때 fade가 가장 뚜렷하게 관찰되어 선호되는 자극 방식은?",
+    "options": [
+      "Single twitch",
+      "Train-of-four",
+      "Tetanic 또는 double-burst stimulation",
+      "Posttetanic count"
+    ],
+    "answer": 2,
+    "exp": "Fade는 train-of-four나 반복 twitch보다 sustained tetanic stimulation 및 double-burst stimulation에서 더 명확하게 나타나므로, 이 두 방식이 비탈분극성 차단의 회복 적절성 판정에 선호된다. 임상적 회복은 fade의 부재와 잘 상관한다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "78 세 남자 환자가 방광암 진단 하에 경요도 방광종양 적출술 (Transurethral resection of bladder tumor, TURB) 을 받기 위해 수술실로 입실하였다. 척추마취를 시행하였고, 피부분절 T10 까지 감각이 소실됨을 확인 후 수술을 시작하였다. 전기소작기를 이용하여 방광 내 종양을 제거하던 도중 좌측 허벅지 모음근의 강한 수축을 관찰하였다. 다음 중 이 환자에서 추정할 수 있는 방광종양의 위치와 허벅지 모음근의 수축을 차단하기 위해 시행할 수 있는 신경차단술로 알맞게 짝지어진 것은?",
+    "options": [
+      "전벽 (anterior wall) - 대퇴신경차단술 (femoral nerve block)",
+      "전벽 (anterior wall) - 폐쇄신경차단술 (obturator nerve block)",
+      "외측벽 (lateral wall) - 대퇴신경차단술 (femoral nerve block)",
+      "외측벽 (lateral wall) - 폐쇄신경차단술 (obturator nerve block)"
     ],
     "answer": 3,
-    "exp": "M-mode of lung of lung ultrasound illustrative of the “lung point” for diagnosis of pneumothorax. The sudden inspiratory transition from a parallel line pattern indicative of absence of lung motion (pneumothorax) to a granular pattern indicative of lung tissue can be observed.",
+    "exp": "A serious intraoperative complication of TURBT is bladder perforation by the rigid cystoscope during tissue resection, which occasionally occurs owing to unexpected patient movement. For this reason, muscle relaxation is preferred during general anesthesia, particularly in lateral wall resections, where the obturator nerve may be stimulated by electrocautery, producing a violent contraction of the ipsilateral thigh muscles. th",
+    "cat": "신경/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "급성 출혈로 인한 급성 저혈량증(acute hypovolemia) 환자에서 헤모글로빈과 헤마토크릿이 대개 정상으로 유지되는 이유로 가장 적절한 것은?",
+    "options": [
+      "출혈 시 적혈구 생성이 즉각적으로 증가하기 때문",
+      "혈관외 체액이 혈관내로 이동할 시간이 충분하지 않기 때문",
+      "급성 출혈에서는 혈장량만 선택적으로 보존되기 때문",
+      "교감신경 항진으로 비장에서 적혈구가 방출되기 때문"
+    ],
+    "answer": 1,
+    "exp": "급성 출혈에 의한 저혈량증에서는 혈관외 체액이 혈관내 공간으로 이동할 시간이 부족하여 헤모글로빈과 헤마토크릿이 대개 변화하지 않는다. 따라서 급성 실혈의 초기 평가 지표로 헤모글로빈/헤마토크릿에만 의존해서는 안 된다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "180cm 98kg의 30세 남성이 2개월 전부터 시작된 우측 다리로 뻗치는 통증을 주소 로 내원하였다. 환자는 천골에서 대전자까지 뻗치는 통증을 함께 호소하고 있었다. 지난 1 년간 7키로의 체중이 늘었다고 하였으며, 2개월전부터 엉치통증과 다리통증이 시작되어 집 에서 실내 자전거 운동을 재개하였으나 자전거에서 내려오다가 실수로 안장에 엉덩이를 부 딪친 이후 운동을 할 때마다 우측 하지 방사통이 악화되어 운동을 수행하기 힘들다고 호소 하였다. 외래에서 시행한 Patrick 검사는 음성이었으며, 우측 고관절의 굴곡, 내전, 내회전 검사시 통증을 호소하였다. 환자에게 특별한 기저질환은 없었다. 환자의 요추 MRI는 다음 과 같았다. 통증 클리닉에서 2회의 요추4-5번, 요추5번-천추1번 경추간공적 경막외 차단술 과을 시행하였으나 호전이 없었고, 이후 우측의 요추3,4,5 후지 내측지 차단술을 시행하였 으나 호전이 없었다. 4번째 방문시 초음파하 주사요법을 시행하였으며 증상이 호전되었다. 다음은 환자에게 시행한 초음파 하 주사치료의 사진이다. 구조물 A의 이름은? [그림 1] [그림 2] B A C",
+    "options": [
+      "이상근 (piriformis muscle)",
+      "대둔근 (Gluteus Maximus muscle)",
+      "대전자 (Greater tuberosity)",
+      "좌골신경 (Sciatic nerve)"
+    ],
+    "answer": 1,
+    "exp": "및",
+    "cat": "부위마취",
+    "lvl": "기본"
+  },
+  {
+    "q": "본태성(일차성) 고혈압의 만성적 병태생리 및 표적 장기 변화에 대한 설명으로 가장 옳은 것은?",
+    "options": [
+      "전체 고혈압의 약 10%만을 차지하며 대부분 신질환에 이차적이다",
+      "질병 경과에 따라 심박출량은 정상으로 돌아가거나 유지되는 반면 전신혈관저항(SVR)이 비정상적으로 증가한다",
+      "후부하의 만성 증가는 좌심실 편심성(eccentric) 비대를 유발한다",
+      "갈색세포종, 쿠싱병, 일차성 알도스테론증이 가장 흔한 원인이다"
+    ],
+    "answer": 1,
+    "exp": "본태성 고혈압은 전체의 80-95%를 차지하며, 경과에 따라 심박출량은 정상화되거나 유지되는 반면 전신혈관저항(SVR)이 비정상적으로 높아지는 양상을 보인다. 만성적인 후부하 증가는 좌심실 동심성(concentric) 비대를 초래한다.",
+    "cat": "순환/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "다음 중 Gabapentin에 대한 설명으로 옳은 것은?",
+    "options": [
+      "주요한 작용은 전압의존성 나트륨채널 차단이다.",
+      "대부분의 신경병증성 통증에 있어서 2차 또는 3차 치료제로 권유되고 있다.",
+      "조혈계통 부작용의 위험으로 혈액검사를 반드시 주기적으로 시행하여야 한다.",
+      "졸림, 현기증 등의 부작용은 치료 초기에 발생되는 경우가 많다."
+    ],
+    "answer": 3,
+    "exp": "㉮ 칼슘채널 서브 유닛과 관련되어 있다. ㉯ 1차 치료제로도 권고되고 있다. ㉰ carbamazepine에 해당하는 내용이다. ㉲ 주로 신장으로 배설되므로 신장기능에 문제가 있는 경우에는 용량을 줄여서 사용해야 한다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "급성 간염 환자에서 간의 합성 기능(synthetic function)을 평가하는 가장 좋은 지표는 무엇인가?",
+    "options": [
+      "혈청 빌리루빈(bilirubin)",
+      "알칼리성 인산분해효소(ALP)",
+      "프로트롬빈 시간(PT)",
+      "아스파르테이트 아미노전이효소(AST)"
+    ],
+    "answer": 2,
+    "exp": "PT는 간의 합성 기능을 평가하는 가장 좋은 지표이며, 비타민 K 투여 후에도 PT 연장(INR ≥1.5)이 지속되면 중증 간기능 부전을 시사한다. 빌리루빈과 ALP는 보통 중등도만 상승하고 담즙정체형에서 더 두드러진다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "Laerdal형 self-inflating resuscitator(자가팽창식 소생기)에서 환자에게 전달되는 흡입산소분율(FiO2)을 결정하는 요인으로 옳은 것은?",
+    "options": [
+      "공급 가스의 산소농도 및 유량에 비례하고, 분당환기량에 반비례한다",
+      "공급 가스 유량에 반비례하고, 분당환기량에 비례한다",
+      "오직 reservoir bag의 부피에만 비례한다",
+      "intake valve의 저항에만 의존한다"
+    ],
+    "answer": 0,
+    "exp": "FiO2는 소생기에 공급되는 가스(보통 100% 산소)의 농도 및 유량에 직접 비례한다. 반면 환자에게 전달되는 분당환기량에는 반비례하므로, 높은 FiO2를 얻으려면 높은 fresh gas flow가 필요하다.",
     "cat": "호흡/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "Carotidendarterectomy 수술 중에 TCD와 cerebral oximetry 중에 옳은 것은?",
+    "options": [
+      "TCD는 직접적으로 뇌허혈을 측정한다.",
+      "TCD는 뇌의 작은동맥의 혈류 속도를 측정한다.",
+      "Oximetry는뇌동맥의 산소포화도를 측정한다.",
+      "Oximetry는뇌 심부조직의 산소포화도를 측정한다."
+    ],
+    "answer": 3,
+    "exp": "해설: TCD는 중대뇌동맥(MCA) 같은 큰 혈관의 혈류 속도(cm/s)를 측정하는 간접 지표일 뿐 허혈을 직접 측정하지 못하고(보기 1·2 오답), cerebral oximetry(NIRS)는 전두엽 심부조직의 동맥+정맥 혼합(약 70~75% 정맥 우세) 국소 산소포화도(rSO₂)를 보는 것이지 뇌동맥 산소포화도가 아니다(보기 3 오답, 4는 측정 부위는 맞으나 정답 아님). NIRS는 기저치 대비 약 20% 감소가 흔히 인용되나 기관·기기마다 baseline과 cutoff가 달라 수술 중 뇌허혈을 판정하는 **검증된 절대 임계치가 확립되어 있지 않으므로**(Miller's Anesthesia; Moritz et al., Anesthesiology 2007) 정답은 5번이다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "경요도전립선절제술(TURP) 중 발생하는 'TURP 증후군'의 주요 기전으로 가장 적절한 것은?",
+    "options": [
+      "고장성 식염수 흡수로 인한 고나트륨혈증",
+      "저장성 세척액의 혈관 내 흡수로 인한 희석성 저나트륨혈증",
+      "과도한 출혈로 인한 저혈량성 쇼크",
+      "세척액 흡수로 인한 대사성 산증"
+    ],
+    "answer": 1,
+    "exp": "단극성 TURP에서는 비전해질 저장성 세척액(예: 글리신, 소르비톨)을 사용하며, 개방된 전립선 정맥동을 통해 다량 흡수되면 희석성 저나트륨혈증과 수분 과부하를 유발한다. 양극성 TURP나 레이저 적출술은 생리식염수를 사용할 수 있어 이 위험을 줄이지만, 레이저 적출술에서도 수분 과부하 증후군이 보고된다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "다음과 같은 기계환기를 적용 받던 환자의 동적/정적 순응도(dynamic/static compliance)는 각각 얼마인가? Tidal volume = 500 mL, peak airway pressure = 30 cmH 0, 2 plateau pressure = 25 cmH 0, positive end-expiratory pressure (PEEP) 2 = 10 cmH 0 2",
+    "options": [
+      "25 / 33.3",
+      "16.7 / 50",
+      "16.7 / 20",
+      "25 / 50"
+    ],
+    "answer": 0,
+    "exp": "dynamic compliance = tidal volume/(peak airway pressure-PEEP) static compliance = tidal volume/(plateau pressure-PEEP) dynamic compliance = 500/(30-10) = 25 static compliance = 500/(25-10) = 33.",
+    "cat": "호흡/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "Sellick maneuver(윤상연골 압박)의 주된 목적으로 가장 적절한 것은?",
+    "options": [
+      "후두 시야 개선을 통한 삽관 용이",
+      "위 내용물 역류 및 흡인 방지",
+      "성문하 부종 감소",
+      "기관지 경련 예방"
+    ],
+    "answer": 1,
+    "exp": "Sellick maneuver는 윤상연골을 압박하여 식도를 폐쇄함으로써 신속순차유도(RSI) 중 위 내용물의 역류와 폐 흡인을 예방하기 위한 술기이다. 흡인 위험이 높은 환자(full stomach)에서 전통적으로 사용되어 왔다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "대동맥판 협착 시 좌심실이 초기에 심박출량(stroke volume)을 유지할 수 있게 하는 주된 보상 기전은?",
+    "options": [
+      "원심성(eccentric) 좌심실 비대",
+      "구심성(concentric) 좌심실 비대",
+      "좌심실 확장(dilatation)",
+      "우심실 비대"
+    ],
+    "answer": 1,
+    "exp": "대동맥판 협착에 의한 좌심실 유출로 폐쇄는 대개 서서히 진행하여 구심성(concentric) 좌심실 비대가 발생한다. 이 비대는 필요한 판막 통과 압력차를 생성하고 심실벽 긴장(wall stress)을 줄여 초기에 심박출량을 유지하게 한다.",
+    "cat": "순환/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "다음은 척수자극술의 결과에 영향을 미치는 요소들에 대한 설명이다. 척수자극술에 의한 통증 조절과 관련해 적절한 설명을 고르시오.",
+    "options": [
+      "사지보다 중심부 통증에 반응이 좋다.",
+      "지속통 보다 돌발통에 반응이 좋다.",
+      "외부 부하의 변화로 오는 통증보다 온도 변화에 의한 통증에 반응이 좋다.",
+      "신경병성 통증보다 침해성 통증에 반응이 좋다."
+    ],
+    "answer": 2,
+    "exp": "① 통증의 부위가 제한되어 있거나 말초에 국한된 경우 더 반응이 좋다. ② 시각통증등급(VAS) 8-9/10 이상의 심한 돌발통에는 잘 반응하지 않으며, 낮은 VAS 점 수를 보이는 성질의 통증에 더 잘 반응한다. ③ 돌발통보다는 지속통에 더 잘 반응한다. ④ 외부 부하의 변화로 오는 통증 보다는 외부 온도의 변화(특히 저온)로 오는 통증에 더 잘 반응한다. ⑤ 척수의 후방 기둥의 굵은 섬유 기능이 남아 있어야, 시술 도중 자극이 제대로 통증 부 위를 커버하는지 확인할 수 있다. ⑥ 항경련제，항우울제 등에 반응 하면 신경병증 통증을 의미하며, 마약을 포함한 진통제 에 반응 하면 침해성 통증일 가능성이 높다. 고식적 척수자극술은 침해성 통증에는 반응이 좋지 않다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "순응도(compliance)가 8 mL gas/cm H2O인 호흡회로에 일회호흡량을 전달하는 동안 회로 내압이 20 cm H2O까지 상승했다면, 회로에서 손실되는 가스량은 얼마인가?",
+    "options": [
+      "80 mL",
+      "160 mL",
+      "200 mL",
+      "400 mL"
+    ],
+    "answer": 1,
+    "exp": "손실량은 순응도와 압력의 곱으로 계산되며, 8 mL/cm H2O × 20 cm H2O = 160 mL이다. 이 손실은 가스 압축과 호흡관 팽창의 조합으로, 길고 순응도가 높은 회로에서 양압환기 시 중요한 고려사항이다.",
+    "cat": "순환/생리",
+    "lvl": "기본"
+  },
+  {
+    "q": "경피적 심장 박동조율(TCP)에서 포획 실패(failure to capture)의 원인으로 보기 어려운 것은?",
+    "options": [
+      "전극 위치 부정확(electrode misplacement)",
+      "전극-피부 간 접촉 불량(poor electrode-to-skin contact)",
+      "흉곽 임피던스 증가(barrel-shaped chest, 심낭삼출 등)",
+      "의식이 있는 환자에서 골격근 수축 통증을 줄이기 위한 진정제 투여"
+    ],
+    "answer": 3,
+    "exp": "포획 실패는 전극 위치 부정확, 전극-피부 접촉 불량, 또는 술통형 흉곽·심낭삼출 등으로 인한 경흉부 임피던스 증가로 발생한다. 진정제 투여는 의식 있는 환자가 골격근 수축 불편감을 견디도록 돕기 위한 처치이며 포획 실패의 원인이 아니다.",
+    "cat": "마취일반",
+    "lvl": "기본"
+  },
+  {
+    "q": "수술실에 내려오는 아기 또는 어린이들은 다양한 이유로 울고 보채기 마련이다. 다음 중 울고 보채는 원인으로 낯가림(stranger anxiety)을 우선적으로 고려하기 시작해야 하는 나이는?",
+    "options": [
+      "1개월",
+      "3-5개월",
+      "8-10개월",
+      "15-18개월"
+    ],
+    "answer": 2,
+    "exp": "The most important social and emotional developmental process of infants is the process of bonding with the parent. Through this attachment process, infants learn to trust their parent, and parents learn to interpret their infants’ cues. Infants learn to recognize familiar faces by 4 to 5 months of age. By 8 to 10 months of age the infant can recognize unfamiliar faces. This is when “stranger anxiety,” the major social milestone of infancy, occurs. It usually begins by 9 months of age, peaks at about 15 months, and often improves by about 2 years of age when the child has had more routine socialization. This comes into play when it is time for the child to separate from the parent (i.e., to go back to the operating room or procedural suite). Separating a child younger than 9 months of age from their parent is usually straightforward, and the child does not typically show significant signs of distress. However, with the onset of “stranger anxiety,” separation of the child from their parent may be difficult without distraction, sedative premedication, or both.",
+    "cat": "마취일반",
     "lvl": "기본"
   }
 ];
