@@ -62,7 +62,8 @@ const QUESTIONS = [
     "answer": 0,
     "exp": "Severe hyperkalemia ECG pattern; 고칼륨혈증(Hyperkalemia)으로 인해 크고 높은 T-wave, 전도 장애로 인한 PR interval 과 QRS 간격의 길어짐, 서맥과 싸인 곡선 형태의 심전도형태를 보인다. 칼슘은 혈중 칼륨 농도를 감소시키지는 않지만, 심장 세포막을 안정화시키므로 심전도의 변화가 보이는 고칼 륨혈증의 치료로 calcium을 보충하는 것이 정답이다. 나머지 보기는 혈중 칼륨농도를 증가 시킨다.",
     "cat": "마취일반",
-    "lvl": "기본"
+    "lvl": "기본",
+    "img": "images/q_005_ecg.jpg"
   },
   {
     "q": "선천성 QT 연장 증후군 (Congenital long QT syndrome)을 진단받은 9세 여자 환 자가 이식형 제세동기 (Implantable Cardioverter Defibrillator, ICD) 삽입을 위해 수술실 에 입실하였다. 감시장치를 부착하던 중 의식 소실이 발생했고, 맥박이 없어 즉시 흉부압박 을 시작하였다. 아래와 같은 심전도 소견을 보였다면, 다음으로 해야 할 일은 무엇인가?",
@@ -75,7 +76,8 @@ const QUESTIONS = [
     "answer": 3,
     "exp": "문제의 심전도 리듬은 무맥성 다형성 심실 빈맥 (Pulseless ventricular tachycardia) 이며, 제세동 (Defibrillation) 을 시행해야 한다.",
     "cat": "순환/생리",
-    "lvl": "기본"
+    "lvl": "기본",
+    "img": "images/q_006_rhythm.jpg"
   },
   {
     "q": "비탈분극성 근이완제(nondepolarizing muscle relaxant)를 사용한 기관내삽관 시 일반적으로 권장되는 투여 용량은?",
@@ -127,7 +129,8 @@ const QUESTIONS = [
     "answer": 0,
     "exp": "강직성척추염의 가장 흔한 초기 증상은 요추부나 둔부 깊이에서 느껴지는 통증이다. 주로 수면 후 아침에 강직과 통증이 있고 일어나 활동하면 강직과 통증이 약해지는 특징적인 소견을 보인다. 가장 흔히 침범되는 말초 관절은 고관절과 견관절이며, 강직 척추염에 의한 급성 전방포도막염이 환자의 25-30% 정도에서 발생한다. 방사선 소견은 척추에 앞서 천장관절에서 먼저 이상 소견이 나타나며, 천장관절의 연골하골 불선명과 주위 골의 미란과 경화가 나타나며, 시간이 지남에 따라 섬유화, 석회화되어 완전한 골성 강직이 일어나게 된다.",
     "cat": "마취일반",
-    "lvl": "기본"
+    "lvl": "기본",
+    "img": "images/q_010_xray.jpg"
   },
   {
     "q": "박동성 고주파 시술에 대한 설명으로 적절한 것은?",
