@@ -168,6 +168,12 @@
     cursor: pointer;
   }
   .option-row { display: flex; align-items: flex-start; }
+  .q-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #e8edf3;
+  }
 </style>
 </head>
 <body>
@@ -187,6 +193,7 @@
     <span class="badge lvl" id="lvlBadge"></span>
   </div>
   <div class="question" id="questionText"></div>
+  <img class="q-image" id="qImage" style="display:none" alt="문제 이미지">
   <div class="options" id="optionsContainer"></div>
   <div class="explanation" id="explanation"></div>
 </div>
@@ -236,6 +243,14 @@ function loadQuestion() {
   document.getElementById('questionText').textContent = (current + 1) + '. ' + q.q;
   document.getElementById('explanation').textContent = q.exp;
   document.getElementById('explanation').classList.remove('show');
+  const imgEl = document.getElementById('qImage');
+  if (q.img) {
+    imgEl.src = q.img;
+    imgEl.style.display = 'block';
+  } else {
+    imgEl.style.display = 'none';
+    imgEl.src = '';
+  }
   document.getElementById('nextBtn').classList.remove('show');
   document.getElementById('counter').textContent = (current + 1) + ' / ' + shuffled.length;
 
