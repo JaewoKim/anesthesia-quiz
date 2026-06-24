@@ -231,7 +231,8 @@ const QUESTIONS = [
     "answer": 3,
     "exp": "(A) Normal capnogram during controlled mechanical ventilation; (B) normal capnogram during spontaneous breathing; (C) increased upslope of phase III, as may occur during bronchospasm (asthma, chronicobstructive pulmonary disease), or partially obstructed endotracheal tube/breathing circuit; (D) cardiogenic oscillations at the end of exhalation as flow decreases to zero and the beating heart causes emptying of different lung regions and back-and-forth motion between exhaled and fresh gas; (E) clefts during phase III indicating spontaneous breathing efforts during controlled mechanical ventilation; (F) esophageal intubation; (G) rebreathing of CO2, as may occur with faulty expiratory valve or exhausted absorber system. Inspiratory CO2 is consistently above 0; (H) faulty inspiratory valve, resulting in a slower downslope, which extends into the inhalation phase (phase 0) as CO2 in the inspiratory limb is rebreathed; (I) two peaks in phase III suggestive of sequential emptying of two heterogeneous compartments, as may be seen in a patient with a single lung transplant; (J) faulty inspiratory valve; (K) sudden shortening of the duration of phase III during controlled mechanical ventilation, suggesting the abrupt onset of a ruptured or leaking endotracheal tube cuff; (L) dual plateau in phase III, suggesting the presence of a leak in a sidestream sample line. Early portion of phase III abnormally low due to dilution of exhaled gas with ambient air. The sharp increase in CO2 at the end of phase III reflects a diminished leak resulting from the increased circuit pressure at the onset of inspiration.",
     "cat": "호흡/생리",
-    "lvl": "기본"
+    "lvl": "기본",
+    "img": "images/q_018_capno_graph.jpg"
   },
   {
     "q": "분만 중 태아 두피 pH(fetal scalp pH) 측정 결과 7.20 미만이 나왔을 때 가장 적절한 임상적 해석과 조치는?",
